@@ -1,61 +1,126 @@
 <!DOCTYPE html>
 <html lang="th">
-  <head>
-    <title>Thai2Night</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
 
-    <!-- Style CSS -->
-    <link rel="stylesheet" href="./dist/css/style.min.css" />
-  </head>
-  <body>
-    <header class="fixed-top">
-      <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <i class="fas fa-bars"></i>
-          </button>
+<head>
+  <title>Thai2Night</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">หน้าแรก</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">สถานที่</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">ร้าน</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">กิจกรรม</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ลานเบียร์</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#">อัลบั้ม</a></li>
-              <li class="nav-item"><a class="nav-link" href="#">บทความ</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">ติดต่อเรา</a>
-              </li>
-            </ul>
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="./dist/css/style.min.css" />
+</head>
+
+<body>
+  <header class="fixed-top">
+    <nav class="navbar navbar-expand-xl navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">หน้าแรก</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">สถานที่</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">ร้าน</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">กิจกรรม</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ลานเบียร์</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">อัลบั้ม</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">บทความ</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">ติดต่อเรา</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-globe"></i> th</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main class="landing-page">
+    <!-- Page header -->
+    <section class="page-header">
+      <div class="container">
+        <img src="./dist/images/logo-head.png" alt="logo-head">
+        <h5 class="mb-4 font-weight-normal">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</h5>
+        <div class="row justify-content-center">
+          <div class="col-12 col-xl-7">
+            <div class="form-row header-search">
+              <div class="col-12 col-xl-3">
+                <select class="selectpicker" data-style="btn-secondary">
+                  <option>กรุงเทพฯ</option>
+                  <option>Ketchup</option>
+                  <option>Barbecue</option>
+                </select>
+              </div>
+              <div class="col-12 col-xl">
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">ค้นหา</span>
+                  </div>
+                  <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                    data-style="btn-secondary">
+                    <option>Mustard</option>
+                    <option>Ketchup</option>
+                    <option>Barbecue</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-xl-auto">
+                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+              </div>
+            </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <h1 class="text-center"><i class="far fa-address-card"></i> Thai2Night</h1>
+      </div>
+    </section>
 
-    <!-- Optional JavaScript -->
-    <script src="./dist/js/jquery-3.3.1.min.js"></script>
-    <script src="./dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+    <!-- Hilight -->
+    <section class="sec-hilight">
+      <div class="container-fluid">
+        <div class="row row-hilight no-gutters">
+          <div class="col-6 col-xl-4">
+            <div class="card">
+              <img src="./dist/images/hilight-01.png" alt="hilight-01" class="card-img">
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card">
+              <img src="./dist/images/hilight-02.png" alt="hilight-02" class="card-img">
+            </div>
+          </div>
+          <div class="col-6 col-xl-4">
+            <div class="card">
+              <img src="./dist/images/hilight-03.png" alt="hilight-03" class="card-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span>© (C) Thai2Night, All Rights Reserved.THAI2NIGHT</span>
+  </footer>
+
+  <!-- Optional JavaScript -->
+  <script src="./dist/js/jquery-3.3.1.min.js"></script>
+  <script src="./dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./dist/js/bootstrap-select.min.js"></script>
+  <script src="./dist/js/script.js"></script>
+</body>
+
 </html>
