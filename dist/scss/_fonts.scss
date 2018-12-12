@@ -1,0 +1,58 @@
+// Kanit
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Medium.woff2") format("woff2"),
+    url("../fonts/Kanit-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Regular.woff2") format("woff2"),
+    url("../fonts/Kanit-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url("../fonts/Kanit-Light.woff2") format("woff2"),
+    url("../fonts/Kanit-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Pridi
+
+@font-face {
+  font-family: "Pridi";
+  src: url("../fonts/Pridi-Medium.woff2") format("woff2"),
+    url("../fonts/Pridi-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pridi";
+  src: url("../fonts/Pridi-Regular.woff2") format("woff2"),
+    url("../fonts/Pridi-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Pridi";
+  src: url("../fonts/Pridi-Light.woff2") format("woff2"),
+    url("../fonts/Pridi-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+// Fontawesome
+
+@import "./fontawesome5/fontawesome";
+@import "./fontawesome5/regular";
+@import "./fontawesome5/solid";
+@import "./fontawesome5/brands";
