@@ -1,0 +1,244 @@
+.place-page {
+    background: url('../images/bg-page.png') no-repeat center top 60vh;
+    background-size: 100% auto;
+
+    .container-content {
+
+        .col-left {
+            .card {
+                background-color: unset;
+
+                &-header {
+                    border-bottom: 1px solid rgba(white, .1);
+                    padding-left: .25rem;
+                    padding-right: .25rem;
+                    padding-bottom: .25rem;
+                }
+
+                &-body {
+                    padding-left: .25rem;
+                    padding-right: .25rem;
+                }
+
+                &-neighborhoods {
+                    .badge {
+                        font-size: 1rem;
+                        padding-left: .75rem;
+                        padding-right: .75rem;
+                        background-color: rgba(white, .1);
+                        font-weight: 300;
+                        margin-bottom: .35rem;
+                    }
+                }
+
+                &-interesting-place,
+                &-interesting-activities {
+
+                    .list-interesting-place,
+                    .list-interesting-activities {
+                        margin-bottom: 0;
+
+                        li {
+                            margin-bottom: 1rem;
+
+                            &:last-child {
+                                margin-bottom: 0;
+                            }
+
+                            .card {
+                                flex-direction: row;
+
+                                &-img {
+                                    border-radius: unset;
+                                    width: 7.5rem;
+                                    height: 4rem;
+                                    @include shadow-primary-sm;
+                                    position: relative;
+
+                                    &::before {
+                                        content: '';
+                                        position: absolute;
+                                        top: 0;
+                                        left: 0;
+                                        right: 0;
+                                        bottom: 0;
+                                        margin: auto;
+                                        background: url('../images/icon-plus.png') no-repeat center center;
+                                        background-size: 2.5rem;
+                                    }
+
+                                    img {
+                                        width: inherit;
+                                        height: inherit;
+                                        object-fit: cover;
+                                        position: relative;
+                                    }
+                                }
+
+                                &-body {
+                                    padding: 0 1rem .5rem;
+                                    padding-right: 0;
+                                    color: white;
+                                }
+
+                                &-title {
+                                    margin-bottom: .5rem;
+                                    font-weight: 400;
+                                }
+
+                                &-text {
+                                    opacity: .8;
+                                    font-weight: 300;
+                                    font-size: 0.875rem;
+                                }
+
+                                &:hover {
+
+                                    .card-img {
+                                        img {
+                                            opacity: .5;
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                    }
+                }
+
+                &-interesting-activities {
+                    .list-interesting-activities {
+                        li {
+                            .card {
+                                &-img {
+                                    width: 5rem;
+                                    height: 7.0625rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // Place detail
+        .col-left {
+            .card {
+                &-opening-time {
+                    .card-header {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+
+                        &-list {
+                            list-style: none;
+                            padding-left: unset;
+                            margin-bottom: unset;
+
+                            li {
+                                display: inline-block;
+
+                                a {
+                                    opacity: .5;
+
+                                    @include hover-focus {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    .badge {
+                        font-size: 1rem;
+                        padding-left: .75rem;
+                        padding-right: .75rem;
+                        background-color: rgba(white, .1);
+                        font-weight: 300;
+                        margin-bottom: .35rem;
+                    }
+                }
+
+                &-menu {
+                    .slimScrollDiv {
+                        margin-top: 1.25rem;
+                        margin-bottom: 1.25rem;
+
+                        .slimScrollBar {
+                            height: 1rem !important;
+                            border-radius: unset !important;
+                            opacity: 1 !important;
+                        }
+
+                        .slimScrollRail {
+                            width: 1px !important;
+                            right: .5rem !important;
+                        }
+                    }
+
+                    .card-body {
+                        padding-top: unset;
+                        padding-bottom: unset;
+                        padding-right: 1.5rem;
+
+                        .list-menu:last-child {
+                            padding-bottom: unset;
+                        }
+
+
+                    }
+
+                    .list-menu {
+                        &-title {
+                            background-color: rgba(white, .15);
+                            padding: 0 1rem;
+                            margin-bottom: .5rem;
+                            border-radius: $border-radius-sm;
+                        }
+
+                        padding-bottom: 1rem;
+                    }
+
+                    ul {
+                        padding-left: 2rem;
+                        margin-bottom: unset;
+
+                        li {
+                            background-color: unset;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            position: relative;
+
+                            &::before {
+                                content: '\25A0';
+                                position: absolute;
+                                left: -1rem;
+                                color: rgba(white, .15);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .col-place {
+
+            .place-images-slide {
+                padding-top: 2rem;
+                margin-bottom: 3.5rem;
+
+                .slick-list {
+                    .slick-track {
+                        .slick-slide {
+                            margin: .5rem;
+                            @include shadow-primary-sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}

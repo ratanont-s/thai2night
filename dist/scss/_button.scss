@@ -1,0 +1,10 @@
+.btn {
+    font-family: $font-kanit;
+    font-weight: 300;
+
+    &-outline {
+        &-light {
+            opacity: .5;
+        }
+    }
+}

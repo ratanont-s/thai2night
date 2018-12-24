@@ -1,0 +1,22 @@
+.pagination {
+    .page-link {
+        margin-left: .5rem;
+    }
+
+    .page-item {
+        &:first-child {
+            .page-link {
+                margin-left: 0;
+                border: unset;
+                border-radius: unset;
+            }
+        }
+
+        &:last-child {
+            .page-link {
+                border: unset;
+                border-radius: unset;
+            }
+        }
+    }
+}

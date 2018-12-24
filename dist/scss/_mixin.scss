@@ -1,0 +1,13 @@
+// Box Shadow
+@mixin shadow-primary-sm {
+    box-shadow: 0px 3px 8px $primary;
+}
+
+@mixin shadow-primary {
+    box-shadow: 0px 3px 20px $primary;
+}
+
+// Text Shadow
+@mixin text-shadow-primary {
+    text-shadow: 0px 3px 20px $primary;
+}

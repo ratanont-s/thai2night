@@ -41,9 +41,10 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-search"></i></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-globe"></i> th</a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.png" alt="icon-facebook"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.png" alt="icon-search"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-language.png" alt="icon-language">
+                th</a></li>
           </ul>
         </div>
       </div>
@@ -55,37 +56,39 @@
     <section class="page-header">
       <div class="container">
         <img src="./dist/images/logo-head.png" alt="logo-head">
-        <h5 class="mb-4 font-weight-normal">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</h5>
-        <div class="row justify-content-center">
-          <div class="col-12 col-xl-7">
-            <div class="form-row header-search">
-              <div class="col-12 col-xl-3">
-                <select class="selectpicker" data-style="btn-secondary">
-                  <option>กรุงเทพฯ</option>
-                  <option>Ketchup</option>
-                  <option>Barbecue</option>
-                </select>
-              </div>
-              <div class="col-12 col-xl">
-                <div class="input-group">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text">ค้นหา</span>
-                  </div>
-                  <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
-                    data-style="btn-secondary">
-                    <option>Mustard</option>
+        <!-- Search -->
+        <div class="search">
+          <h5 class="mb-4 font-weight-normal">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</h5>
+          <div class="row justify-content-center">
+            <div class="col-12 col-xl-7">
+              <div class="form-row header-search">
+                <div class="col-12 col-xl-3 mb-2 mb-lg-0">
+                  <select class="selectpicker province" data-style="btn-secondary">
+                    <option>กรุงเทพฯ</option>
                     <option>Ketchup</option>
                     <option>Barbecue</option>
                   </select>
                 </div>
-              </div>
-              <div class="col-xl-auto">
-                <button class="btn btn-primary" type="button"><i class="fas fa-search"></i></button>
+                <div class="col col-xl">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text">ค้นหา</span>
+                    </div>
+                    <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                      data-style="btn-secondary">
+                      <option>Mustard</option>
+                      <option>Ketchup</option>
+                      <option>Barbecue</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-auto col-xl-auto">
+                  <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png" alt="icon-search"></button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
     </section>
 
     <!-- Hilight -->
@@ -108,11 +111,411 @@
             </div>
           </div>
         </div>
+
+        <!-- Banner -->
+        <div class="banner">
+          <div class="banner-slide">
+            <a href="#" target="_blank" class="banner-link"><img src="./dist/images/banner-default.png" alt="banner"></a>
+            <a href="#" target="_blank" class="banner-link"><img src="./dist/images/banner-default.png" alt="banner"></a>
+            <a href="#" target="_blank" class="banner-link"><img src="./dist/images/banner-default.png" alt="banner"></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <!-- ลานเบียร์ -->
+    <section class="sec-beer-garden">
+      <div class="container">
+        <div class="sec-title">
+          <span><img src="./dist/images/icon-beer.png" alt=""></span>
+          <h1>ลานเบียร์</h1>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/beer-gardent-01.png" alt="Beer Garden">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ลานช้าง เซนซอรี่ เทรลส์ เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/beer-gardent-02.png" alt="Beer Garden">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/beer-gardent-03.png" alt="Beer Garden">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ลานสิงห์ @เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-light">ดูต่อ</a>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- ร้านที่ยอด Like มากสุด -->
+    <section class="sec-like-restaurant">
+      <div class="container">
+        <div class="sec-title">
+          <span><img src="./dist/images/icon-like.png" alt="Like Restaurant"></span>
+          <h1>ร้านที่ยอด Like มากสุด</h1>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/like-restaurant-01.png" alt="Like Restaurant">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ลานช้าง เซนซอรี่ เทรลส์ เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/like-restaurant-02.png" alt="Like Restaurant">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/like-restaurant-03.png" alt="Like Restaurant">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">ลานสิงห์ @เซ็นทรัลเวิลด์</h5>
+                <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                  คอทเทลให้เหลือได้หลากหลาย</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-light">ดูต่อ</a>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- ร้านเด็ดแต่ละจังหวัด -->
+    <section class="sec-each-province">
+      <div class="container">
+        <div class="sec-title">
+          <span><img src="./dist/images/icon-restaurant.png" alt="Each province"></span>
+          <h1>ร้านเด็ดแต่ละจังหวัด</h1>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-4">
+            <h4 class="list-header">กรุงเทพมหานคร <a href="#"><img src="./dist/images/icon-arrow-right.png" alt="arrow-right"></a></h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-01.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">232 BAR</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-02.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Craft Intersect</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-03.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">VS Runway Bar</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h4 class="list-header">ภูเก็ต <a href="#"><img src="./dist/images/icon-arrow-right.png" alt="arrow-right"></a></h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-04.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cue Bar</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-05.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Jeedz by Art</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-06.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">Cape Sienna</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-4">
+            <h4 class="list-header">เชียงใหม่ <a href="#"><img src="./dist/images/icon-arrow-right.png" alt="arrow-right"></a></h4>
+            <ul class="list-unstyled">
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-07.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">November Chiangmai</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-08.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">แอทเชียงใหม่คาเฟ่</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="card">
+                  <div class="card-img">
+                    <img src="./dist/images/each-province-09.png" alt="each-province">
+                  </div>
+                  <div class="card-body">
+                    <h5 class="card-title">ชีวา คาเฟ่</h5>
+                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี
+                      มีดนตรีสด คอทเทลให้เหลือ</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-light">ดูทุกจัดหวัด</a>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- กิจกรรมสุดเด็ด -->
+    <section class="sec-activities">
+      <div class="container">
+        <div class="sec-title">
+          <span><img src="./dist/images/icon-activities.png" alt="Activities"></span>
+          <h1>กิจกรรมสุดเด็ด</h1>
+        </div>
+        <div class="row">
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-01.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-02.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-03.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-04.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-05.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-06.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-07.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+          <div class="col-6 col-lg-4 col-xl-3">
+            <a href="#" class="card">
+              <div class="card-img">
+                <img src="./dist/images/activities-08.png" alt="activities">
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">3 ต.ค. 61</h5>
+                <p class="card-text">Season Five
+                  บาร์ ท่องโก๋ กาล</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="text-center">
+          <a href="#" class="btn btn-outline-light">ดูต่อ</a>
+        </div>
+        <hr>
+      </div>
+    </section>
+
+    <!-- Application -->
+    <section class="sec-application">
+      <div class="container">
+        <div class="row justify-content-center align-items-center">
+          <div class="col-12 col-lg-6 col-xl-auto">
+            <div class="d-lg-none text-center">
+              <img src="./dist/images/logo-navbar.png" alt="logo">
+              <h5 class="font-weight-normal mb-3 mb-lg-5">Application Download</h5>
+            </div>
+            <img src="./dist/images/mobile-application.png" alt="mobile-application" class="w-100 mb-3">
+          </div>
+          <div class="col-12 col-lg-6 col-xl-auto">
+            <div class="text-center">
+              <div class="d-none d-lg-block">
+                <img src="./dist/images/logo-navbar.png" alt="logo">
+                <h5 class="font-weight-normal mb-5">Application Download</h5>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-10">
+                  <div class="card card-application">
+                    <div class="form-row justify-content-center align-items-center">
+                      <div class="col-6"><a href="#" target="_blank"><img src="./dist/images/app-store.png" alt="app-store"
+                            class="w-100"></a></div>
+                      <div class="col-6"><a href="#" target="_blank"><img src="./dist/images/google-play.png" alt="google-play"
+                            class="w-100"></a></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <footer class="container text-center">
     <span>© (C) Thai2Night, All Rights Reserved.THAI2NIGHT</span>
   </footer>
 
@@ -120,6 +523,8 @@
   <script src="./dist/js/jquery-3.3.1.min.js"></script>
   <script src="./dist/js/bootstrap.bundle.min.js"></script>
   <script src="./dist/js/bootstrap-select.min.js"></script>
+  <script src="./dist/js/slick.min.js"></script>
+  <script src="./dist/js/jquery.slimscroll.min.js"></script>
   <script src="./dist/js/script.js"></script>
 </body>
 

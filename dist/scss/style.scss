@@ -2,9 +2,17 @@
 @import "./variables";
 @import "./bs4/bootstrap";
 @import './bs-select/bootstrap-select';
+@import './slick/slick';
+@import './slick/slick-theme';
 
+@import './mixin';
+@import './card';
+@import './button';
 @import "./reboot";
 @import "./navbar";
 @import "./page-header";
+@import './pagination';
+@import './breadcrumb';
 
+@import './pages/pages';
 @import './landing';

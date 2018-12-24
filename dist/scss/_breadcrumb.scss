@@ -1,0 +1,17 @@
+.breadcrumb {
+    font-weight: 300;
+
+    &-item {
+        img {
+            vertical-align: sub;
+        }
+
+        a {
+            color: white;
+        }
+
+        &:before {
+            padding-top: 2px;
+        }
+    }
+}

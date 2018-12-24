@@ -1,13 +1,332 @@
 .landing-page {
+
+
     .sec-hilight {
         padding: 2.5rem 0;
 
         .container-fluid {
             max-width: 1200px;
+
+            .row {
+
+                >.col,
+                >[class*="col-"] {
+                    &:last-child {
+                        @include media-breakpoint-down(md) {
+                            display: none;
+                        }
+                    }
+                }
+            }
         }
 
         .row-hilight {
-            .card {}
+            margin-bottom: 4rem;
+        }
+
+        .banner {
+            max-width: 47.5rem;
+            margin: auto;
+            padding: 1rem;
+            padding-bottom: .5rem;
+            border: 1px solid rgba(white, .15);
+
+            &-slide {
+                @include shadow-primary-sm;
+
+                .slick-dots {
+                    bottom: -30px;
+                }
+            }
+
+            &-link {
+                display: block;
+            }
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    .sec-beer-garden,
+    .sec-like-restaurant {
+        background: transparent url('../images/bg-section.png') no-repeat center center;
+        background-size: contain;
+        padding: 2.5rem 0;
+
+        .row {
+
+            >.col,
+            >[class*="col-"] {
+                &:last-child {
+                    @include media-breakpoint-down(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .card {
+            background-color: transparent;
+            border-radius: unset;
+
+            &-img {
+                border-radius: unset;
+                position: relative;
+                @include shadow-primary;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: url('../images/icon-plus.png') no-repeat center center;
+                    background-size: auto;
+                }
+
+                img {
+                    position: relative;
+                    width: 100%;
+                }
+            }
+
+            &-body {
+                padding-left: .25rem;
+                padding-right: .25rem;
+                text-align: center;
+                color: white;
+            }
+
+            &-title {
+                font-weight: 400;
+            }
+
+            &-text {
+                font-weight: 300;
+                opacity: .8;
+            }
+
+            &:hover {
+
+                .card-img {
+                    img {
+                        opacity: .5;
+                    }
+                }
+
+            }
+        }
+
+        .btn {
+            min-width: 10rem;
+            opacity: .5;
+        }
+
+        hr {
+            border-top-color: rgba(white, .25);
+        }
+    }
+
+    .sec-each-province {
+        background: transparent url('../images/bg-section.png') no-repeat center center;
+        background-size: contain;
+        padding: 2.5rem 0;
+
+        .row {
+
+            >.col,
+            >[class*="col-"] {
+                &:last-child {
+                    @include media-breakpoint-down(md) {
+                        display: none;
+                    }
+                }
+            }
+        }
+
+        .list {
+            &-header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 1px solid rgba(white, .25);
+                padding-bottom: .5rem;
+                margin-bottom: 1.5rem;
+                font-weight: 400;
+
+                a {
+                    opacity: .5;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+                }
+            }
+
+            &-unstyled {
+
+                li {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
+        .card {
+            flex-direction: row;
+            border-radius: unset;
+            background-color: unset;
+
+            &-img {
+                border-radius: unset;
+                width: 6.25rem;
+                height: 6.25rem;
+                @include shadow-primary;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: url('../images/icon-plus.png') no-repeat center center;
+                    background-size: 2.5rem;
+                }
+
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+
+            &-body {
+                padding: .25rem 1rem;
+                padding-right: 0;
+                color: white;
+            }
+
+            &-title {
+                margin-bottom: .5rem;
+                font-weight: 400;
+            }
+
+            &-text {
+                opacity: .8;
+                font-weight: 300;
+            }
+
+            &:hover {
+
+                .card-img {
+                    img {
+                        opacity: .5;
+                    }
+                }
+
+            }
+        }
+
+        .btn {
+            min-width: 10rem;
+            opacity: .5;
+        }
+
+        hr {
+            border-top-color: rgba(white, .25);
+        }
+    }
+
+    .sec-activities {
+        background: transparent url('../images/bg-section.png') no-repeat center center;
+        background-size: contain;
+        padding: 2.5rem 0;
+
+        .card {
+            flex-direction: row;
+            border-radius: unset;
+            background-color: unset;
+            margin-bottom: 2rem;
+
+            &-img {
+                border-radius: unset;
+                width: 6.25rem;
+                height: 8.75rem;
+                @include shadow-primary;
+                position: relative;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: url('../images/icon-plus.png') no-repeat center center;
+                    background-size: 2.5rem;
+                }
+
+                img {
+                    width: inherit;
+                    height: inherit;
+                    object-fit: cover;
+                    position: relative;
+                }
+            }
+
+            &-body {
+                padding: .25rem 1rem;
+                padding-right: 0;
+                color: white;
+            }
+
+            &-title {
+                margin-bottom: .5rem;
+                font-weight: 400;
+            }
+
+            &-text {
+                opacity: .8;
+                font-weight: 300;
+            }
+
+            &:hover {
+
+                .card-img {
+                    img {
+                        opacity: .5;
+                    }
+                }
+
+            }
+        }
+
+        .btn {
+            min-width: 10rem;
+            opacity: .5;
+        }
+
+        hr {
+            border-top-color: rgba(white, .25);
+        }
+    }
+
+    .sec-application {
+        background: transparent url('../images/bg-application.png') no-repeat center center;
+        background-size: contain;
+        padding: 2.5rem 0;
+
+        .card-application {
+            background-color: rgba(white, .1);
+            padding: .5rem;
         }
     }
 }

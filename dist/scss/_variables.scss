@@ -17,3 +17,29 @@ $btn-border-radius:0;
 
 // Input
 $input-border-radius:0;
+
+// a
+$link-hover-decoration:none;
+
+// Card
+$card-border-width:0;
+
+// hr
+$hr-border-color: rgba(white, .25);
+
+// Pagination
+$pagination-color:white;
+$pagination-padding-y:.25rem;
+$pagination-bg:unset;
+$pagination-border-color:rgba(white, .25);
+$pagination-hover-color:white;
+$pagination-hover-bg:$primary;
+$pagination-hover-border-color:$primary;
+$pagination-active-color:white;
+$pagination-active-bg:$primary;
+$pagination-active-border-color:$primary;
+
+// Breadcrumb
+$breadcrumb-bg:unset;
+$breadcrumb-divider: "\203A";
+$breadcrumb-divider-color:white;
