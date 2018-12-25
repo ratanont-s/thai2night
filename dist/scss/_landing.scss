@@ -1,27 +1,99 @@
 .landing-page {
-
-
     .sec-hilight {
         padding: 2.5rem 0;
 
         .container-fluid {
             max-width: 1200px;
 
-            .row {
+            // .row {
 
-                >.col,
-                >[class*="col-"] {
-                    &:last-child {
-                        @include media-breakpoint-down(md) {
-                            display: none;
+            //     >.col,
+            //     >[class*="col-"] {
+            //         &:last-child {
+            //             @include media-breakpoint-down(md) {
+            //                 display: none;
+            //             }
+            //         }
+            //     }
+            // }
+        }
+
+        // .row-hilight {
+        //     margin-bottom: 4rem;
+
+        //     .card {
+        //         width: 30.125rem;
+        //         height: 21.875rem;
+        //     }
+
+        //     >.col,
+        //     >[class*="col-"] {
+        //         &:nth-child(2) {
+        //             .card {
+        //                 transform: skew(-20deg);
+
+        //                 &-img {
+        //                     transform: skew(20deg);
+        //                 }
+        //             }
+        //         }
+        //     }
+        // }
+
+        .list-hilight {
+            list-style: none;
+            padding-left: unset;
+            display: flex;
+            margin-bottom: 4rem;
+            @include shadow-primary;
+
+            &-item {
+                margin-left: -90px;
+
+                .card {
+                    width: 450px;
+                    height: 350px;
+                    overflow: hidden;
+                    border-radius: unset;
+                    background-color: unset;
+
+                    &-img {
+                        height: 350px;
+                        object-fit: cover;
+                    }
+                }
+
+                &:nth-child(1) {
+                    z-index: 1;
+                    margin-left: unset;
+                }
+
+                &:nth-child(2) {
+                    z-index: 2;
+
+                    .card {
+                        transform: skew(-20deg);
+                        border-left: .25rem solid rgba(#d31f5e, .5);
+                        border-right: .25rem solid rgba(#ffd81a, .5);
+
+                        &-img {
+                            transform: skew(20deg);
+                            position: absolute;
+                            top: 0;
+                            left: -64px;
+
+                            width: 577.39px;
+
                         }
                     }
                 }
-            }
-        }
 
-        .row-hilight {
-            margin-bottom: 4rem;
+                &:nth-child(3) {
+                    z-index: 1;
+
+                    .card {}
+                }
+            }
         }
 
         .banner {

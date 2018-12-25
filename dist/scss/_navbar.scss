@@ -1,7 +1,28 @@
 .navbar {
   background-color: $secondary;
   font-family: $font-kanit;
+
+  &-brand {
+    margin-right: 2.5rem;
+  }
+
   &-toggler {
     border: unset;
+  }
+
+  @include media-breakpoint-up(xl) {
+    padding-bottom: unset;
+
+    .nav {
+      &-item {
+        &.active {
+          border-bottom: .15rem solid white;
+        }
+      }
+
+      &-link {
+        padding: .5rem 1rem 1rem;
+      }
+    }
   }
 }
