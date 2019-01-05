@@ -1,5 +1,6 @@
 html {
   font-size: .6rem;
+  height: 100%;
 }
 
 @include media-breakpoint-up(sm) {
@@ -28,7 +29,11 @@ html {
 
 
 body {
-  padding-top: 54px;
+  // padding-top: 54px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 

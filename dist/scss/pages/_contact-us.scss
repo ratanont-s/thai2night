@@ -1,0 +1,46 @@
+#contactUsPage {
+    .line-vertical {
+        width: 1px;
+        height: 50px;
+        background-color: rgba(white, .15);
+    }
+
+    .list-social {
+        li {
+            a {
+                opacity: .5;
+
+                &:hover {
+                    opacity: 1;
+                }
+
+                img {
+                    height: 2rem;
+                }
+            }
+        }
+    }
+
+    .card-contact-form {
+        background-color: rgba(white, .15);
+        border-radius: unset;
+
+        .form-control,
+        .btn {
+            background-color: unset !important;
+            border-color: rgba(white, .15);
+            color: white;
+        }
+
+        .form-control::placeholder {
+            color: rgba(white, .5);
+        }
+
+        .btn {
+            @include hover-focus {
+                background-color: white !important;
+                color: black;
+            }
+        }
+    }
+}
