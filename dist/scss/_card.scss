@@ -81,3 +81,269 @@
         }
     }
 }
+
+// Card Place
+.card-place {
+    background-color: transparent;
+    border-radius: unset;
+    margin-bottom: 1.5rem;
+
+    .card {
+        &-img {
+            border-radius: unset;
+            position: relative;
+            @include shadow-primary;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background: url('../images/icon-plus.png') no-repeat center center;
+                background-size: auto;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        &-body {
+            padding-left: .25rem;
+            padding-right: .25rem;
+            text-align: center;
+            color: white;
+        }
+
+        &-status {
+            margin-top: -.5rem;
+            list-style-type: none;
+            padding-left: unset;
+            text-align: right;
+            font-size: small;
+            opacity: .5;
+
+            li {
+                display: inline-block;
+                margin-right: 1.5rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+        }
+
+        &-text {
+            font-size: 0.875rem;
+            font-weight: 300;
+            opacity: .8;
+        }
+    }
+
+    &:hover {
+
+        .card {
+            &-img {
+                img {
+                    opacity: .5;
+                }
+            }
+
+            &-status {
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+// Card Activities
+.card-activities {
+    flex-direction: row;
+    border-radius: unset;
+    background-color: unset;
+    margin-bottom: 2rem;
+
+    .card {
+        &-img {
+            border-radius: unset;
+            width: 6.25rem;
+            height: 8.75rem;
+            @include shadow-primary;
+            position: relative;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background: url('../images/icon-plus.png') no-repeat center center;
+                background-size: 2.5rem;
+            }
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                position: relative;
+            }
+        }
+
+        &-body {
+            padding: .25rem 1rem;
+            padding-right: 0;
+            color: white;
+        }
+
+        &-title {
+            margin-bottom: .5rem;
+            font-weight: 400;
+        }
+
+        &-text {
+            opacity: .8;
+            font-weight: 300;
+        }
+    }
+
+    &:hover {
+
+        .card-img {
+            img {
+                opacity: .5;
+            }
+        }
+
+    }
+}
+
+
+// Card Album
+.card-album {
+    background-color: transparent;
+    border-radius: unset;
+    margin-bottom: 1.5rem;
+
+    .card {
+        &-img {
+            border-radius: unset;
+            position: relative;
+            @include shadow-primary;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background: url('../images/icon-plus.png') no-repeat center center;
+                background-size: auto;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        &-body {
+            padding-left: .25rem;
+            padding-right: .25rem;
+            text-align: center;
+            color: white;
+        }
+
+        &-status {
+            margin-top: -.5rem;
+            list-style-type: none;
+            padding-left: unset;
+            text-align: right;
+            font-size: small;
+            opacity: .5;
+
+            li {
+                display: inline-block;
+                margin-right: 1.5rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+        }
+
+        &-text {
+            font-size: 0.875rem;
+            font-weight: 300;
+            opacity: .8;
+        }
+    }
+
+    &:hover {
+
+        .card {
+            &-img {
+                img {
+                    opacity: .5;
+                }
+            }
+
+            &-status {
+                opacity: 1;
+            }
+        }
+
+    }
+}
+
+// Card Search
+.card-search {
+    background-color: rgba(white, .15);
+    border-radius: unset;
+    padding: .5rem;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: -.25rem;
+        left: 0;
+        width: 2rem;
+        height: 2.25rem;
+        background: url('../images/icon-pin.png') no-repeat center center;
+        background-size: contain;
+        z-index: $zindex-sticky;
+    }
+
+    .province {
+        .btn.dropdown-toggle.btn-secondary {
+            padding-left: 1.5rem;
+        }
+    }
+
+    .input-group {
+        &-text {
+            background-color: $secondary;
+            color: white;
+            border-color: $secondary;
+        }
+    }
+
+
+}

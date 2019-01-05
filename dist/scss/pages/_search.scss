@@ -1,0 +1,20 @@
+#searchPage {
+    .card {
+        &-keyword {
+            background-color: rgba(white, .15);
+            border-radius: unset;
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+    }
+
+    .tags-box {
+        text-align: center;
+
+        .badge {
+            background-color: rgba(white, .15);
+            font-weight: 300;
+            margin-bottom: 1.5rem;
+        }
+    }
+}

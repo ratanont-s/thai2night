@@ -1,6 +1,8 @@
 @import './place-page';
 @import './contact-us';
+@import './search';
 
 .page-content {
-    background: url('../images/bg-page-content.png') repeat-y center top;
+    background: url('../images/bg-page-content.png') no-repeat center top;
+    background-size: 100% auto;
 }
