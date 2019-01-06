@@ -1,0 +1,91 @@
+.sidebar {
+    @include media-breakpoint-up(xl) {
+        margin-top: 148px;
+    }
+
+    // Card Sidebar
+    .card-sidebar {
+        background-color: unset;
+        border-radius: unset;
+
+        .card {
+            &-header {
+                border-bottom: 1px solid rgba(white, .15);
+                padding: .5rem 0;
+                font-weight: 400;
+            }
+
+            &-body {
+                padding: 1rem 0;
+
+                .badge {
+                    font-size: 1rem;
+                    margin-bottom: .5rem;
+                }
+
+                .list-interesting {
+                    list-style: none;
+                    padding-left: unset;
+                    margin-bottom: unset;
+
+                    .list {
+                        &-item {
+                            margin-bottom: 1.5rem;
+
+                            &:last-child {
+                                margin-bottom: unset;
+                            }
+                        }
+
+                        &-link {
+                            color: white;
+
+                            &:hover {
+
+                                .list-img {
+                                    img {
+                                        opacity: .5;
+                                    }
+                                }
+
+                            }
+                        }
+
+                        &-img {
+                            @include shadow-primary-sm;
+                            position: relative;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: 0;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                margin: auto;
+                                background: url('../images/icon-plus.png') no-repeat center center;
+                                background-size: 2.5rem;
+                            }
+
+                            img {
+                                max-width: 100%;
+                                position: relative;
+                            }
+                        }
+
+                        &-title {
+                            font-weight: 400;
+                            margin-bottom: unset;
+                        }
+
+                        &-text {
+                            font-size: 0.875rem;
+                            font-weight: 300;
+                            opacity: .8;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

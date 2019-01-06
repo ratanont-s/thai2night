@@ -347,3 +347,87 @@
 
 
 }
+
+// Card Article
+.card-article {
+    background-color: transparent;
+    border-radius: unset;
+    margin-bottom: 1.5rem;
+
+    .card {
+        &-img {
+            border-radius: unset;
+            position: relative;
+            @include shadow-primary;
+
+            &::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                margin: auto;
+                background: url('../images/icon-plus.png') no-repeat center center;
+                background-size: auto;
+            }
+
+            img {
+                position: relative;
+                width: 100%;
+            }
+        }
+
+        &-body {
+            padding-left: .25rem;
+            padding-right: .25rem;
+            text-align: center;
+            color: white;
+        }
+
+        &-status {
+            margin-top: -.5rem;
+            list-style-type: none;
+            padding-left: unset;
+            font-size: small;
+            opacity: .5;
+            display: flex;
+
+            li {
+                margin-right: 1.5rem;
+                font-weight: 300;
+                font-size: .875rem;
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+
+        &-title {
+            font-weight: 400;
+        }
+
+        &-text {
+            font-size: 0.875rem;
+            font-weight: 300;
+            opacity: .8;
+        }
+    }
+
+    &:hover {
+
+        .card {
+            &-img {
+                img {
+                    opacity: .5;
+                }
+            }
+
+            &-status {
+                opacity: 1;
+            }
+        }
+
+    }
+}
