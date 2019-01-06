@@ -15,7 +15,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./index.html">
                     <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -29,14 +29,14 @@
                             <a class="nav-link" href="./index.html">หน้าแรก</a>
                         </li>
                         <li class="nav-item active"><a class="nav-link" href="./place.html">สถานที่</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">ร้าน</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./activities.html">กิจกรรม</a></li>
+                        <li class="nav-item "><a class="nav-link" href="#">ร้าน</a></li>
+                        <li class="nav-item "><a class="nav-link" href="./activities.html">กิจกรรม</a></li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">ลานเบียร์</a>
                         </li>
                         <li class="nav-item"><a class="nav-link" href="./album.html">อัลบั้ม</a></li>
-                        <li class="nav-item"><a class="nav-link" href="./article.html">บทความ</a></li>
-                        <li class="nav-item">
+                        <li class="nav-item "><a class="nav-link" href="./article.html">บทความ</a></li>
+                        <li class="nav-item ">
                             <a class="nav-link" href="./contact-us.html">ติดต่อเรา</a>
                         </li>
                     </ul>
@@ -53,26 +53,32 @@
         </nav>
     </header>
 
-    <main class="place-page">
-        <!-- Page header -->
-        <section class="page-header">
+    <main id="placePage">
+        <!-- Page Header -->
+        <div class="page-header">
             <div class="container">
-                <img src="./dist/images/logo-head.png" alt="logo-head">
-                <!-- Search -->
-                <div class="search">
-                    <h5 class="mb-4 font-weight-normal">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</h5>
+                <img src="./dist/images/logo-head.png" alt="logo-head" class="page-header-img">
+                <div class="page-header-body">
+                    <p class="page-header-title">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</p>
                     <!-- Breadcrumb -->
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><img src="./dist/images/icon-rocket.png" alt="icon-rocket"
-                                    class="img-fluid"> <a href="./index.html">หน้าแรก</a></li>
-                            <li class="breadcrumb-item" aria-current="page">สถานที่</li>
+                            <li class="breadcrumb-item"><a href="./index.html"><img src="./dist/images/icon-rocket.png"
+                                        alt="icon-rocket"> หน้าแรก</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">สถานที่</li>
                         </ol>
                     </nav>
-
-                    <div class="row justify-content-center">
-                        <div class="col-12 col-xl-7">
-                            <div class="form-row header-search">
+                </div>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="container">
+                <!-- Search Box -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-xl-8">
+                        <div class="card card-search">
+                            <div class="form-row">
                                 <div class="col-12 col-xl-3 mb-2 mb-lg-0">
                                     <select class="selectpicker province" data-style="btn-secondary">
                                         <option>กรุงเทพฯ</option>
@@ -101,187 +107,198 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-        <div class="container container-content">
-            <div class="row">
-                <!-- Left -->
-                <div class="col-xl-4 col-left">
-                    <!-- ย่านยอดนิยม -->
-                    <div class="card card-neighborhoods">
-                        <h4 class="card-header">ย่านยอดนิยม</h4>
-                        <div class="card-body">
-                            <span class="badge">วัฒนา</span>
-                            <span class="badge">ปทุมวัน</span>
-                            <span class="badge">จตุจักร</span>
-                            <span class="badge">บางรัก</span>
-                            <span class="badge">ห้วยขวาง</span>
-                            <span class="badge">ปิ่นเกล้า</span>
-                            <span class="badge">บางกระปิ</span>
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-12 col-xl-4 order-last order-xl-first">
+                        <div class="sidebar">
+                            <!-- ย่านยอดนิยม -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">ย่านยอดนิยม</h4>
+                                <div class="card-body">
+                                    <span class="badge">วัฒนา</span>
+                                    <span class="badge">ปทุมวัน</span>
+                                    <span class="badge">จตุจักร</span>
+                                    <span class="badge">บางรัก</span>
+                                    <span class="badge">ห้วยขวาง</span>
+                                    <span class="badge">ปิ่นเกล้า</span>
+                                    <span class="badge">บางกระปิ</span>
+                                </div>
+                            </div>
+                            <!-- สถานที่น่าสนใจ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">สถานที่น่าสนใจ</h4>
+                                <div class="card-body">
+                                    <ul class="list-interesting row">
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-12 col-xl-5">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-xl-7 text-center text-xl-left">
+                                                    <h5 class="list-title">TEP BAR</h5>
+                                                    <p class="list-text">
+                                                        The Cultural Bar of dvbsd
+                                                        Thailand.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-12 col-xl-5">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-xl-7 text-center text-xl-left">
+                                                    <h5 class="list-title">TEP BAR</h5>
+                                                    <p class="list-text">
+                                                        The Cultural Bar of dvbsd
+                                                        Thailand.
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- กิจกรรมที่น่าสนใจ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">กิจกรรมที่น่าสนใจ</h4>
+                                <div class="card-body">
+                                    <ul class="list-interesting row">
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <a href="#" class="btn btn-outline-light btn-block">ดูต่อ</a>
+                            </div>
                         </div>
                     </div>
-
-                    <!-- สถานที่น่าสนใจ -->
-                    <div class="card card-interesting-place">
-                        <h4 class="card-header">สถานที่น่าสนใจ</h4>
-                        <div class="card-body">
-                            <ul class="list-unstyled list-interesting-place">
-                                <li>
-                                    <a href="#" class="card">
-                                        <div class="card-img">
-                                            <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">TEP BAR</h5>
-                                            <p class="card-text">The Cultural Bar of dvbsd
-                                                Thailand</p>
-                                        </div>
+                    <!-- Content -->
+                    <div class="col-12 col-xl-8 order-first order-xl-last">
+                        <div class="sec-title">
+                            <span><img src="./dist/images/icon-place.png" alt="icon-place"></span>
+                            <h1>สถานที่ยอดนิยมใน : กรุงเทพฯ</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="./place-detail.html" class="card card-place">
+                                    <div class="card-img">
+                                        <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                        <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                                        <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                                            คอทเทลให้เหลือได้หลากหลาย</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./place-detail.html" class="card card-place">
+                                    <div class="card-img">
+                                        <img src="./dist/images/beer-gardent-03.png" alt="beer-gardent-03">
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                        <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                                        <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                                            คอทเทลให้เหลือได้หลากหลาย</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card card-place">
+                                    <div class="card-img">
+                                        <img src="./dist/images/beer-gardent-01.png" alt="beer-gardent-01">
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                        <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                                        <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                                            คอทเทลให้เหลือได้หลากหลาย</p>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="#" class="card card-place">
+                                    <div class="card-img">
+                                        <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
+                                    </div>
+                                    <div class="card-body">
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                        <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
+                                        <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
+                                            คอทเทลให้เหลือได้หลากหลาย</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&lsaquo;</span>
                                     </a>
                                 </li>
-                                <li>
-                                    <a href="#" class="card">
-                                        <div class="card-img">
-                                            <img src="./dist/images/Chaengwattana.png" alt="Chaengwattana">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Chaengwattana</h5>
-                                            <p class="card-text">The Cultural Bar of dvbsd
-                                                Thailand</p>
-                                        </div>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&rsaquo;</span>
                                     </a>
                                 </li>
                             </ul>
-                        </div>
+                        </nav>
+                        <hr>
                     </div>
-
-                    <!-- กิจกรรมที่น่าสนใจ -->
-                    <div class="card card-interesting-activities">
-                        <h4 class="card-header">กิจกรรมที่น่าสนใจ</h4>
-                        <div class="card-body">
-                            <ul class="list-unstyled list-interesting-activities">
-                                <li>
-                                    <a href="#" class="card">
-                                        <div class="card-img">
-                                            <img src="./dist/images/activities-01.png" alt="activities-01">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">3 ต.ค. 61</h5>
-                                            <p class="card-text">Season Fiveบาร์ ท่องโก๋
-                                                โรงเบียร์ฮอลแลนด์</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" class="card">
-                                        <div class="card-img">
-                                            <img src="./dist/images/activities-02.png" alt="activities-02">
-                                        </div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">3 ต.ค. 61</h5>
-                                            <p class="card-text">Season Fiveบาร์ ท่องโก๋
-                                                โรงเบียร์ฮอลแลนด์</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                        <a href="#" class="btn btn-outline-light btn-block">ดูต่อ</a>
-                    </div>
-                </div>
-
-                <!-- สถานที่ -->
-                <div class="col-xl-8 col-place">
-                    <div class="sec-title">
-                        <span><img src="./dist/images/icon-place.png" alt="icon-place"></span>
-                        <h1>สถานที่ยอดนิยมใน กรุงเทพฯ</h1>
-                    </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <a href="./place-detail.html" class="card card-style-1">
-                                <div class="card-img">
-                                    <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
-                                </div>
-                                <div class="card-body">
-                                    <ul class="card-status">
-                                        <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
-                                        <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
-                                    </ul>
-                                    <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
-                                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
-                                        คอทเทลให้เหลือได้หลากหลาย</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="./place-detail.html" class="card card-style-1">
-                                <div class="card-img">
-                                    <img src="./dist/images/beer-gardent-03.png" alt="beer-gardent-03">
-                                </div>
-                                <div class="card-body">
-                                    <ul class="card-status">
-                                        <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
-                                        <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
-                                    </ul>
-                                    <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
-                                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
-                                        คอทเทลให้เหลือได้หลากหลาย</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="card card-style-1">
-                                <div class="card-img">
-                                    <img src="./dist/images/beer-gardent-01.png" alt="beer-gardent-01">
-                                </div>
-                                <div class="card-body">
-                                    <ul class="card-status">
-                                        <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
-                                        <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
-                                    </ul>
-                                    <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
-                                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
-                                        คอทเทลให้เหลือได้หลากหลาย</p>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="col-6">
-                            <a href="#" class="card card-style-1">
-                                <div class="card-img">
-                                    <img src="./dist/images/beer-gardent-02.png" alt="beer-gardent-02">
-                                </div>
-                                <div class="card-body">
-                                    <ul class="card-status">
-                                        <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
-                                        <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
-                                    </ul>
-                                    <h5 class="card-title">ไฮเนเก้น Star Voyager เซ็นทรัลเวิลด์</h5>
-                                    <p class="card-text">อาหารอร่อย ไม่แพง บรรยายกาศดี มีดนตรีสด
-                                        คอทเทลให้เหลือได้หลากหลาย</p>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Pagination -->
-                    <nav aria-label="Page navigation example">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&lsaquo;</span>
-                                </a>
-                            </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#" aria-label="Next">
-                                    <span aria-hidden="true">&rsaquo;</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <hr>
                 </div>
             </div>
         </div>
