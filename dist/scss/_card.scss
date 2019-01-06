@@ -177,7 +177,7 @@
             border-radius: unset;
             width: 6.25rem;
             height: 8.75rem;
-            @include shadow-primary;
+            @include shadow-primary-sm;
             position: relative;
 
             &::before {
@@ -215,6 +215,30 @@
             opacity: .8;
             font-weight: 300;
         }
+
+        &-status {
+            list-style: none;
+            padding-left: unset;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: unset;
+
+            @include media-breakpoint-up(xl) {
+                flex-direction: row;
+            }
+
+            li {
+                margin-bottom: .5rem;
+                margin-right: .5rem;
+                font-weight: 300;
+                font-size: .875rem;
+
+                &:last-child {
+                    margin-bottom: unset;
+                    margin-right: unset;
+                }
+            }
+        }
     }
 
     &:hover {
@@ -227,7 +251,6 @@
 
     }
 }
-
 
 // Card Album
 .card-album {

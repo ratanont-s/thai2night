@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <title>Thai2Night</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+</head>
+
+<body>
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="./index.html">
+                    <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./place.html">สถานที่</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ร้าน</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="./activities.html">กิจกรรม</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ลานเบียร์</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./album.html">อัลบั้ม</a></li>
+                        <li class="nav-item "><a class="nav-link" href="./article.html">บทความ</a></li>
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./contact-us.html">ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.png"
+                                    alt="icon-facebook"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.png" alt="icon-search"></a></li>
+                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-language.png"
+                                    alt="icon-language">
+                                th</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="activitiesPage">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <img src="./dist/images/logo-head.png" alt="logo-head" class="page-header-img">
+                <div class="page-header-body">
+                    <p class="page-header-title">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</p>
+                    <!-- Breadcrumb -->
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="./index.html"><img src="./dist/images/icon-rocket.png"
+                                        alt="icon-rocket"> หน้าแรก</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">กิจกรรม</li>
+                        </ol>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="container">
+                <!-- Search Box -->
+                <div class="row justify-content-center mb-4">
+                    <div class="col-12 col-xl-8">
+                        <div class="card card-search">
+                            <div class="form-row">
+                                <div class="col-12 col-xl-3 mb-2 mb-lg-0">
+                                    <select class="selectpicker province" data-style="btn-secondary">
+                                        <option>กรุงเทพฯ</option>
+                                        <option>Ketchup</option>
+                                        <option>Barbecue</option>
+                                    </select>
+                                </div>
+                                <div class="col col-xl">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <span class="input-group-text">ค้นหา</span>
+                                        </div>
+                                        <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                                            data-style="btn-secondary">
+                                            <option>Mustard</option>
+                                            <option>Ketchup</option>
+                                            <option>Barbecue</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-auto col-xl-auto">
+                                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png"
+                                            alt="icon-search"></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-12 col-xl-4 order-last order-xl-first">
+                        <div class="sidebar">
+                            <!-- กิจกรรมจังหวัดอื่นๆ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">กิจกรรมจังหวัดอื่นๆ</h4>
+                                <div class="card-body">
+                                    <span class="badge">เชียงใหม่</span>
+                                    <span class="badge">เชียงราย</span>
+                                    <span class="badge">ขอนแก่น</span>
+                                    <span class="badge">ชลบุรี</span>
+                                    <span class="badge">ภูเก็ต</span>
+                                    <span class="badge">บุรีรัมย์</span>
+                                    <span class="badge">กาญจนบุรี</span>
+                                </div>
+                            </div>
+                            <!-- กิจกรรมแนะนำ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">กิจกรรมแนะนำ</h4>
+                                <div class="card-body">
+                                    <ul class="list-interesting row">
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-12 col-xl-8 order-first order-xl-last">
+                        <div class="sec-title">
+                            <span><img src="./dist/images/icon-activities.png" alt="icon-activities"></span>
+                            <h1>กิจกรรม : กรุงเทพมหานคร</h1>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-6">
+                                <a href="./activities-detail.html" class="card card-activities">
+                                    <div class="card-img">
+                                        <img src="./dist/images/activities-01.png" alt="activities">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">3 ต.ค. 61</h5>
+                                        <p class="card-text">พบกับ​ Concert ปู​ พงษ์​สิทธิ์​
+                                            คำภีร์ ที่​ Bee​ Restaurant​
+                                            ราม.2​ ห้ามพลาด</p>
+                                        <ul class="card-status">
+                                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                            <li><img src="./dist/images/icon-share.png" alt="icon-share"> 25 Share</li>
+                                        </ul>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Pagination -->
+                        <nav aria-label="Page navigation example">
+                            <ul class="pagination justify-content-center">
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Previous">
+                                        <span aria-hidden="true">&lsaquo;</span>
+                                    </a>
+                                </li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item">
+                                    <a class="page-link" href="#" aria-label="Next">
+                                        <span aria-hidden="true">&rsaquo;</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <span>© (C) Thai2Night, All Rights Reserved.THAI2NIGHT</span>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/bootstrap-select.min.js"></script>
+    <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/jquery.slimscroll.min.js"></script>
+    <script src="./dist/js/script.js"></script>
+</body>
+
+</html>
