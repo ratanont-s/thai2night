@@ -1,6 +1,6 @@
 .sidebar {
     @include media-breakpoint-up(xl) {
-        margin-top: 148px;
+        margin-top: 155px;
     }
 
     // Card Sidebar
@@ -68,7 +68,7 @@
                             }
 
                             img {
-                                max-width: 100%;
+                                width: 100%;
                                 position: relative;
                             }
                         }
