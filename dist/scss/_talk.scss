@@ -20,6 +20,10 @@
             background-color: $primary;
             z-index: $zindex-fixed;
 
+            svg path {
+                fill: white;
+            }
+
             &-contact {
                 display: none;
             }
@@ -32,6 +36,10 @@
                 .talk-show {
                     display: none;
                 }
+
+                &:focus {
+                    background-color: $primary !important;
+                }
             }
 
             &:hover {
@@ -39,7 +47,11 @@
             }
 
             &:focus {
-                background-color: darken($primary, 10%);
+                background-color: white;
+
+                svg path {
+                    fill: $primary;
+                }
             }
 
             img {
@@ -50,9 +62,8 @@
         .card {
             display: none;
             width: 240px;
-            height: 240px;
-            padding: .5rem;
-            padding-right: calc(.5rem + 60px);
+            height: auto;
+            padding: 15px;
             border-radius: unset;
             position: absolute;
             top: 0;
@@ -60,8 +71,7 @@
             z-index: $zindex-fixed - 1;
 
             @include media-breakpoint-up(xl) {
-                width: 360px;
-                height: 330px;
+                width: 300px;
                 left: -300px;
             }
 
@@ -102,6 +112,4 @@
             }
         }
     }
-
-
 }

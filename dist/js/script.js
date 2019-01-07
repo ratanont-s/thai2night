@@ -34,9 +34,23 @@ $(function () {
 
     // Talk
     $(".btn-talk-toggler").click(function () {
+        $(".card").removeClass("show");
         $(".list-talk").toggleClass("show");
     });
     $("#btnTalkMessenger").click(function () {
-        $(".card-messager").toggleClass("show");
+        $(".card").removeClass("show");
+        $(".card-messeger").toggleClass("show");
+    });
+    $("#btnTalkLine").click(function () {
+        $(".card").removeClass("show");
+        $(".card-line").toggleClass("show");
+    });
+    // $("#btnTalkMail").click(function () {
+    //     $(".card").removeClass("show");
+    //     $(".card-mail").toggleClass("show");
+    // });
+    $("#btnTalkChat").click(function () {
+        $(".card").removeClass("show");
+        $(".card-chat").toggleClass("show");
     });
 });
