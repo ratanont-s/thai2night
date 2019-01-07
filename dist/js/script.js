@@ -36,4 +36,7 @@ $(function () {
     $(".btn-talk-toggler").click(function () {
         $(".list-talk").toggleClass("show");
     });
+    $("#btnTalkMessenger").click(function () {
+        $(".card-messager").toggleClass("show");
+    });
 });
