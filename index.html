@@ -18,9 +18,8 @@
         <a class="navbar-brand" href="./index.html">
           <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="fas fa-bars"></i>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+          <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -41,7 +40,7 @@
             </li>
           </ul>
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.png" alt="icon-facebook"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.svg" alt="icon-facebook"></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.png" alt="icon-search"></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-language.png" alt="icon-language">
                 th</a></li>
@@ -52,47 +51,50 @@
   </header>
 
   <main class="landing-page">
-    <!-- Page header -->
-    <section class="page-header">
+    <!-- Page Header -->
+    <div class="page-header">
       <div class="container">
-        <img src="./dist/images/logo-head.png" alt="logo-head">
-        <!-- Search -->
-        <div class="search">
-          <h5 class="mb-4 font-weight-normal">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</h5>
-          <div class="row justify-content-center">
-            <div class="col-12 col-xl-7">
-              <div class="form-row header-search">
-                <div class="col-12 col-xl-3 mb-2 mb-lg-0">
-                  <select class="selectpicker province" data-style="btn-secondary">
-                    <option>กรุงเทพฯ</option>
-                    <option>Ketchup</option>
-                    <option>Barbecue</option>
-                  </select>
-                </div>
-                <div class="col col-xl">
-                  <div class="input-group">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text">ค้นหา</span>
-                    </div>
-                    <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
-                      data-style="btn-secondary">
-                      <option>Mustard</option>
+        <img src="./dist/images/logo-head.png" alt="logo-head" class="page-header-img">
+        <div class="page-header-body">
+          <p class="page-header-title">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</p>
+          <!-- Search Box -->
+          <div class="row justify-content-center mb-4">
+            <div class="col-12 col-xl-8">
+              <div class="card card-search">
+                <div class="form-row">
+                  <div class="col-12 col-xl-3 mb-2 mb-lg-0">
+                    <select class="selectpicker province" data-style="btn-secondary">
+                      <option>กรุงเทพฯ</option>
                       <option>Ketchup</option>
                       <option>Barbecue</option>
                     </select>
                   </div>
-                </div>
-                <div class="col-auto col-xl-auto">
-                  <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png" alt="icon-search"></button>
+                  <div class="col col-xl">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <span class="input-group-text">ค้นหา</span>
+                      </div>
+                      <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                        data-style="btn-secondary">
+                        <option>Mustard</option>
+                        <option>Ketchup</option>
+                        <option>Barbecue</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-auto col-xl-auto">
+                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png" alt="icon-search"></button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-    </section>
+      </div>
+    </div>
 
     <!-- Hilight -->
-    <section class="sec-hilight">
+    <section class="sec-hilight d-none">
       <div class="container-fluid">
         <ul class="list-hilight">
           <li class="list-hilight-item">
@@ -535,6 +537,41 @@
   <footer class="container text-center">
     <span>© (C) Thai2Night, All Rights Reserved.THAI2NIGHT</span>
   </footer>
+
+  <!-- Talk -->
+  <div class="talk">
+    <ul class="list-talk">
+      <li>
+        <a href="javascript:void(0);" class="btn-talk btn-talk-toggler">
+          <img src="./dist/images/icon-talk.png" alt="icon-talk" class="talk-hide">
+          <img src="./dist/images/icon-talk-close.png" alt="icon-talk" class="talk-show">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="btn-talk btn-talk-contact">
+          <img src="./dist/images/icon-talk-messager.png" alt="icon-talk">
+        </a>
+        <div class="card card-messager">
+          <img src="./dist/images/facebook-page.png" alt="facebook-page" class="img-fluid">
+        </div>
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="btn-talk btn-talk-contact">
+          <img src="./dist/images/icon-talk-line.png" alt="icon-talk">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="btn-talk btn-talk-contact">
+          <img src="./dist/images/icon-talk-mail.png" alt="icon-talk">
+        </a>
+      </li>
+      <li>
+        <a href="javascript:void(0);" class="btn-talk btn-talk-contact">
+          <img src="./dist/images/icon-talk-chat.png" alt="icon-talk">
+        </a>
+      </li>
+    </ul>
+  </div>
 
   <!-- Optional JavaScript -->
   <script src="./dist/js/jquery-3.3.1.min.js"></script>

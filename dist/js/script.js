@@ -31,4 +31,9 @@ $(function () {
             }
         }]
     });
+
+    // Talk
+    $(".btn-talk-toggler").click(function () {
+        $(".list-talk").toggleClass("show");
+    });
 });

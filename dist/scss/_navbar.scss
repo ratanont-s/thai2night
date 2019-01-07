@@ -1,27 +1,64 @@
 .navbar {
   background-color: $secondary;
   font-family: $font-kanit;
+  font-size: 1.25rem;
 
   &-brand {
     margin-right: 2.5rem;
   }
 
   &-toggler {
-    border: unset;
+    &-icon {
+      color: white;
+    }
   }
+
+  &-dark {
+    .navbar-nav .nav {
+      &-item {
+        &.active {
+          .nav-link {
+            color: white;
+          }
+        }
+      }
+
+      &-link {
+        color: $primary;
+
+        img {
+          height: 1.25rem;
+          opacity: .15;
+        }
+
+        @include hover-focus {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+
 
   @include media-breakpoint-up(xl) {
     padding-bottom: unset;
 
     .nav {
       &-item {
+        margin-right: .5rem;
+
+        &:last-child {
+          margin-right: unset;
+        }
+
         &.active {
           border-bottom: .15rem solid white;
         }
       }
 
       &-link {
-        padding: .5rem 1rem 1rem;
+        padding: .5rem;
       }
     }
   }
