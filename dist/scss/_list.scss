@@ -1,0 +1,25 @@
+// List comment
+.list-comment {
+    list-style: none;
+    padding-left: unset;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: unset;
+
+    li {
+        margin-right: 1rem;
+
+        &:last-child {
+            margin-right: unset;
+        }
+    }
+}
+
+// Image link
+.img-link {
+    opacity: .15;
+
+    @include hover-focus {
+        opacity: 1;
+    }
+}

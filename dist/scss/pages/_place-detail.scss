@@ -1,0 +1,22 @@
+#placeDetailPage {
+    .page-header {
+        padding-top: 5rem;
+
+        &-img {
+            height: auto;
+            margin-bottom: 1.5rem;
+            background-color: rgba(white, .15);
+            padding: 1rem;
+            display: inline-block;
+        }
+
+        &-body {
+            margin-top: unset;
+        }
+
+        &-title {
+            font-size: 1.625rem;
+            @include text-shadow-primary;
+        }
+    }
+}
