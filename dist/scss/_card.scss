@@ -497,3 +497,28 @@
 
     }
 }
+
+// Card Language
+.card-language {
+    background-color: unset;
+
+    a {
+        display: flex;
+        align-items: center;
+        color: white;
+        opacity: .15;
+        font-size: 1.25rem;
+
+        img {
+            margin-right: .5rem;
+        }
+
+        &:hover {
+            opacity: .5;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}

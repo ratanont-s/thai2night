@@ -2,14 +2,94 @@
   background-color: $secondary;
   font-family: $font-kanit;
   font-size: 1.25rem;
+  padding: 0 1rem;
 
   &-brand {
-    margin-right: 2.5rem;
+    padding: unset;
+
+    @include media-breakpoint-up(xl) {
+      margin-right: 2.5rem;
+    }
   }
 
   &-toggler {
-    &-icon {
+    border: unset;
+
+    .show {
+      display: none;
+    }
+
+    &.active {
+      .hide {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+    }
+
+    &:focus {
+      outline: unset;
+    }
+  }
+
+  &-nav-right {
+    list-style: none;
+    padding-left: unset;
+    margin-bottom: unset;
+    display: flex;
+
+    .nav-item {
+      &.active {
+        &::after {
+          display: none;
+        }
+
+        .nav-link {
+          img {
+            opacity: 1;
+          }
+        }
+      }
+
+      &.show {
+        position: relative;
+
+        .nav-link {
+          background-color: $primary;
+
+          img {
+            opacity: 1;
+          }
+
+          &::before {
+            content: '\25BC';
+            position: absolute;
+            bottom: -1.25rem;
+            left: 0;
+            right: 0;
+            text-align: center;
+            color: $primary;
+            z-index: $zindex-dropdown + 1;
+          }
+        }
+      }
+    }
+
+    .nav-link {
       color: white;
+      padding: .5rem .75rem;
+
+      @include hover-focus {
+        img {
+          opacity: 1;
+        }
+      }
+
+      img {
+        opacity: .15;
+      }
     }
   }
 
@@ -40,6 +120,55 @@
     }
   }
 
+  .dropdown {
+    &-toggle {
+      &::after {
+        display: none;
+      }
+    }
+
+    &-menu {
+      background-color: darken($secondary, 5%);
+      margin-top: unset;
+      padding: 1.5rem;
+      border: unset;
+
+      .card-search {
+        background-color: unset;
+        min-width: 40vw;
+
+        .form-control {
+          background-color: $secondary;
+          border: 2px solid rgba(white, .15);
+          color: white;
+
+          &:focus {
+            box-shadow: unset;
+          }
+        }
+
+        .input-group {
+          border: 2px solid rgba(white, .15);
+
+          .form-control {
+            border: unset;
+          }
+        }
+      }
+
+      @include media-breakpoint-down(lg) {
+        width: 100%;
+        float: unset;
+        position: fixed;
+        top: 33px;
+        left: 0;
+      }
+
+      @include media-breakpoint-up(xl) {
+        // min-width: 50vw;
+      }
+    }
+  }
 
   @include media-breakpoint-up(xl) {
     padding-bottom: unset;
@@ -53,7 +182,18 @@
         }
 
         &.active {
-          border-bottom: .15rem solid white;
+          position: relative;
+
+          &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 1px;
+            background-color: white;
+          }
         }
       }
 

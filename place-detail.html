@@ -12,23 +12,85 @@
 </head>
 
 <body>
+    <!-- Header -->
     <header class="fixed-top">
         <nav class="navbar navbar-expand-xl navbar-dark">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand order-xl-0" href="./index.html">
                     <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars"></i>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex order-xl-2">
+                    <ul class="navbar-nav-right order-0 order-xl-1">
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Thai2Night" target="_blank"><img
+                                    src="./dist/images/icon-facebook.svg" alt="icon-facebook"></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSearch" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="./dist/images/icon-search.svg" alt="icon-search">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSearch">
+                                <div class="card card-search">
+                                    <form action="./search.html" class="form-row">
+                                        <div class="col-12 col-xl-3 mb-2 mb-lg-0">
+                                            <select class="form-control">
+                                                <option>กรุงเทพมหานคร</option>
+                                                <option>เชียงใหม่</option>
+                                                <option>ชลบุรี</option>
+                                                <option>ภูเก็ต</option>
+                                                <option>ขอนแก่น</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-xl">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">ค้นหา</span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ...">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto col-xl-auto">
+                                            <button class="btn btn-primary" type="submit"><img src="./dist/images/icon-search.svg"
+                                                    alt="icon-search"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="./dist/images/icon-language.png" alt="icon-language" class="d-none d-xl-inline-block">
+                                th
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLanguage">
+                                <div class="card card-language">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="mr-4">
+                                            <a href="#" class="active">
+                                                <img src="./dist/images/icon-flag-th.png" alt="icon-flag-th"> Thai
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="./dist/images/icon-flag-en.png" alt="icon-flag-en"> English
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <img src="./dist/images/icon-menu.svg" alt="icon-menu" class="hide">
+                        <img src="./dist/images/icon-close.svg" alt="icon-close" class="show">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-xl-1" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item ">
                             <a class="nav-link" href="./index.html">หน้าแรก</a>
                         </li>
-                        <li class="nav-item "><a class="nav-link" href="./place.html">สถานที่</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./place.html">สถานที่</a></li>
                         <li class="nav-item active"><a class="nav-link" href="#">ร้าน</a></li>
                         <li class="nav-item"><a class="nav-link" href="./activities.html">กิจกรรม</a></li>
                         <li class="nav-item">
@@ -39,14 +101,6 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./contact-us.html">ติดต่อเรา</a>
                         </li>
-                    </ul>
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.png"
-                                    alt="icon-facebook"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.png" alt="icon-search"></a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-language.png"
-                                    alt="icon-language">
-                                th</a></li>
                     </ul>
                 </div>
             </div>

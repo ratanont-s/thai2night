@@ -1,4 +1,10 @@
 $(function () {
+
+    // Navbar Toggler
+    $(".navbar-toggler").click(function () {
+        $(this).toggleClass("active");
+    });
+
     //   Banner
     $('.banner-slide').slick({
         dots: true,
@@ -45,12 +51,13 @@ $(function () {
         $(".card").removeClass("show");
         $(".card-line").toggleClass("show");
     });
-    // $("#btnTalkMail").click(function () {
-    //     $(".card").removeClass("show");
-    //     $(".card-mail").toggleClass("show");
-    // });
     $("#btnTalkChat").click(function () {
         $(".card").removeClass("show");
         $(".card-chat").toggleClass("show");
+    });
+
+    // Drapdown menu
+    $('.dropdown-menu[aria-labelledby="navbarDropdownSearch"]').on('click', function (event) {
+        event.stopPropagation();
     });
 });
