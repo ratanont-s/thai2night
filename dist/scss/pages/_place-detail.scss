@@ -1,5 +1,7 @@
 #placeDetailPage {
     .page-header {
+        background: transparent url('../images/bg-page-header-2.jpg') no-repeat center center;
+        background-size: cover;
         padding-top: 5rem;
 
         &-img {
@@ -15,8 +17,112 @@
         }
 
         &-title {
+            color: white;
             font-size: 1.625rem;
+            font-weight: 400;
             @include text-shadow-primary;
+        }
+
+        &-text {
+            color: white;
+        }
+    }
+
+    .sidebar {
+        margin-top: unset;
+
+        .card-menu {
+            .slimScrollDiv {
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+
+                .slimScrollBar {
+                    height: 1rem !important;
+                    border-radius: unset !important;
+                    opacity: 1 !important;
+                }
+
+                .slimScrollRail {
+                    width: 1px !important;
+                    right: .5rem !important;
+                }
+            }
+
+            .card-body {
+                padding-top: unset;
+                padding-bottom: unset;
+                padding-right: 1.5rem;
+
+                .list-menu:last-child {
+                    padding-bottom: unset;
+                }
+
+
+            }
+
+            .list-menu {
+                &-title {
+                    background-color: rgba(white, .15);
+                    padding: 0 1rem;
+                    margin-bottom: .5rem;
+                    border-radius: $border-radius-sm;
+                }
+
+                padding-bottom: 1rem;
+
+                ul {
+                    padding-left: 2rem;
+                    margin-bottom: unset;
+
+                    li {
+                        background-color: unset;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        position: relative;
+
+                        &::before {
+                            content: '\25A0';
+                            position: absolute;
+                            left: -1rem;
+                            color: rgba(white, .15);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .page-content {
+        .place-images-slide {
+            padding-top: 2rem;
+            margin-bottom: 3.5rem;
+
+            .slick-list {
+                .slick-track {
+                    .slick-slide {
+                        margin: .5rem;
+                        @include shadow-primary-sm;
+                    }
+                }
+            }
+        }
+
+        .btn-map {
+            font: {
+                family: $font-pridi;
+                size: .875rem;
+                weight: 300;
+            }
+
+            padding: 0 .75rem;
+            background-color: rgba(white, .15);
+            border-radius: .25rem;
+            color: white;
+
+            @include hover-focus {
+                opacity: .8;
+            }
         }
     }
 }

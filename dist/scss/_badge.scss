@@ -1,3 +1,16 @@
 .badge {
     background-color: rgba(white, .15);
 }
+
+// Tags list
+.tags-list {
+    .badge {
+        font: {
+            family: $font-pridi;
+            size: .875rem;
+            weight: 300;
+        }
+
+        margin-bottom: .25rem;
+    }
+}

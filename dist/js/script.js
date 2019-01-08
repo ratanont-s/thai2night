@@ -19,7 +19,7 @@ $(function () {
         alwaysVisible: true,
         railVisible: true,
         railColor: "white",
-        wheelStep: 100,
+        wheelStep: 100
     });
 
     // Place images slide
