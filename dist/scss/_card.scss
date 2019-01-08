@@ -368,6 +368,49 @@
         }
     }
 
+    .dropdown {
+        &-menu {
+            background-color: $secondary;
+            border-radius: unset;
+        }
+
+        &-header {
+            .text {
+                color: $light;
+            }
+        }
+
+        &-item {
+            color: $light;
+            font-weight: 300;
+
+            .icon {
+                width: 1rem;
+                height: 1rem;
+                display: inline-block;
+                margin-right: .5rem;
+
+                &-beer {
+                    background: url('../images/icon-beer-2.png') no-repeat center center;
+                    background-size: contain;
+                }
+
+                &-microphone {
+                    background: url('../images/icon-microphone.png') no-repeat center center;
+                    background-size: contain;
+                }
+
+                &-plane {
+                    background: url('../images/icon-plane.png') no-repeat center center;
+                    background-size: contain;
+                }
+            }
+
+            &:hover {
+                background-color: $primary;
+            }
+        }
+    }
 
 }
 

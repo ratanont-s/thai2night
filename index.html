@@ -39,12 +39,12 @@
               <a class="nav-link" href="./contact-us.html">ติดต่อเรา</a>
             </li>
           </ul>
-          <ul class="navbar-nav ml-auto">
+          <!-- <ul class="navbar-nav ml-auto">
             <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-facebook.svg" alt="icon-facebook"></a></li>
-            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.png" alt="icon-search"></a></li>
+            <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-search.svg" alt="icon-search"></a></li>
             <li class="nav-item"><a class="nav-link" href="#"><img src="./dist/images/icon-language.png" alt="icon-language">
                 th</a></li>
-          </ul>
+          </ul> -->
         </div>
       </div>
     </nav>
@@ -64,9 +64,13 @@
                 <div class="form-row">
                   <div class="col-12 col-xl-3 mb-2 mb-lg-0">
                     <select class="selectpicker province" data-style="btn-secondary">
-                      <option>กรุงเทพฯ</option>
-                      <option>Ketchup</option>
-                      <option>Barbecue</option>
+                      <optgroup label="จังหวัดที่คุณอยู่">
+                        <option>กรุงเทพมหานคร</option>
+                        <option>เชียงใหม่</option>
+                        <option>ชลบุรี</option>
+                        <option>ภูเก็ต</option>
+                        <option>ขอนแก่น</option>
+                      </optgroup>
                     </select>
                   </div>
                   <div class="col col-xl">
@@ -76,14 +80,16 @@
                       </div>
                       <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
                         data-style="btn-secondary">
-                        <option>Mustard</option>
-                        <option>Ketchup</option>
-                        <option>Barbecue</option>
+                        <option data-icon="icon icon-beer">
+                          ร้านอาหาร กิจกรรม ที่เที่ยว
+                          ลานเบียร์ ...</option>
+                        <option data-icon="icon icon-microphone">ร้านเหล้า ร้านเหล้า ร้านเหล้า</option>
+                        <option data-icon="icon icon-plane">ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ...</option>
                       </select>
                     </div>
                   </div>
                   <div class="col-auto col-xl-auto">
-                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png" alt="icon-search"></button>
+                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.svg" alt="icon-search"></button>
                   </div>
                 </div>
               </div>
