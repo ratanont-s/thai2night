@@ -711,3 +711,20 @@
         }
     }
 }
+
+.card-columns {
+    column-gap: .5rem;
+
+    @include media-breakpoint-only(lg) {
+        column-count: 3;
+    }
+
+    @include media-breakpoint-only(xl) {
+        column-count: 4;
+    }
+
+    .card {
+        height: calc(100% - .5rem);
+        margin-bottom: .5rem;
+    }
+}

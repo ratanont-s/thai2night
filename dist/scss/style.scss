@@ -1,11 +1,12 @@
 @import "./fonts";
 @import "./variables";
 @import "./bs4/bootstrap";
+@import './mixin';
 @import './bs-select/bootstrap-select';
 @import './slick/slick';
 @import './slick/slick-theme';
+@import './ekko-lightbox';
 
-@import './mixin';
 @import './card';
 @import './button';
 @import "./reboot";
@@ -19,6 +20,7 @@
 @import './list';
 @import './dropdown';
 @import './popover';
+@import './text';
 
 @import './pages/pages';
 @import './landing';

@@ -74,4 +74,13 @@ $(function () {
         html: true,
         trigger: "focus"
     });
+
+    // cardGallery
+    $("[data-toggle='lightbox']").click(function (e) {
+        e.preventDefault();
+        $(this).ekkoLightbox({
+            leftArrow: "<span><img src='./dist/images/arrow-left.png' alt='arrow-left'></span>",
+            rightArrow: "<span><img src='./dist/images/arrow-right.png' alt='arrow-right'></span>"
+        });
+    });
 });

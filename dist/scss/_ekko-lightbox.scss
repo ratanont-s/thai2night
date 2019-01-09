@@ -1,0 +1,46 @@
+.ekko-lightbox {
+    .modal {
+        &-content {
+            @include shadow-primary;
+        }
+
+        &-body {
+            padding: unset;
+        }
+    }
+
+    &-nav-overlay {
+        left: -2rem;
+        right: -2rem;
+        width: calc(100% + 4rem);
+
+        a {
+            opacity: .15;
+            color: white;
+
+            span {
+                padding: 0;
+                height: 2rem;
+                display: block;
+
+                img {
+                    height: 100%;
+                    width: auto;
+                }
+            }
+
+            &:hover {
+                color: white;
+                opacity: 1;
+            }
+        }
+    }
+}
+
+.modal-backdrop {
+    background-color: $body-bg;
+
+    &.show {
+        opacity: .9;
+    }
+}
