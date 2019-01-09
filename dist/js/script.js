@@ -60,4 +60,18 @@ $(function () {
     $('.dropdown-menu[aria-labelledby="navbarDropdownSearch"]').on('click', function (event) {
         event.stopPropagation();
     });
+
+    // Popover
+    $('[data-toggle="popover"]').popover();
+    var listShare = "<ul class='list-share'>" +
+        "<li><a href='#'><img src='./dist/images/icon-facebook.png' alt='icon-facebook' class='img-link'></a></li>" +
+        "<li><a href='#'><img src='./dist/images/icon-twitter.png' alt='icon-twitter' class='img-link'></a></li>" +
+        "<li><a href='#'><img src='./dist/images/icon-google-plus.png' alt='icon-google-plus' class='img-link'></a></li>" +
+        "</ul>";
+    $('.popover-share').popover({
+        placement: "bottom",
+        content: listShare,
+        html: true,
+        trigger: "focus"
+    });
 });

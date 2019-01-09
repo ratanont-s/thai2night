@@ -6,6 +6,11 @@
     align-items: flex-end;
     margin-bottom: unset;
 
+    font: {
+        size: .875rem;
+        weight: 300;
+    }
+
     li {
         margin-right: 1rem;
 
@@ -15,9 +20,25 @@
     }
 }
 
+// List share
+.list-share {
+    list-style: none;
+    padding-left: unset;
+    margin-bottom: unset;
+
+    li {
+        display: inline-block;
+        margin-right: .5rem;
+
+        &:last-child {
+            margin-right: unset;
+        }
+    }
+}
+
 // Image link
 .img-link {
-    opacity: .15;
+    opacity: .5;
 
     @include hover-focus {
         opacity: 1;
