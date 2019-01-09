@@ -7,4 +7,21 @@
             opacity: .5;
         }
     }
+
+    &-map {
+        font: {
+            family: $font-pridi;
+            size: .875rem;
+            weight: 300;
+        }
+
+        padding: 0 .75rem;
+        background-color: rgba(white, .15);
+        border-radius: .25rem;
+        color: white;
+
+        @include hover-focus {
+            opacity: .8;
+        }
+    }
 }

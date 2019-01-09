@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="th">
+
+<head>
+    <title>Thai2Night</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./dist/css/jasny-bootstrap.min.css" />
+    <link rel="stylesheet" href="./dist/css/style.min.css" />
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-xl navbar-dark">
+            <div class="container">
+                <a class="navbar-brand order-xl-0" href="./index.html">
+                    <img src="./dist/images/logo-navbar.png" alt="Logo Thai2Night" />
+                </a>
+                <div class="d-flex order-xl-2">
+                    <ul class="navbar-nav-right order-0 order-xl-1">
+                        <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Thai2Night" target="_blank"><img
+                                    src="./dist/images/icon-facebook.svg" alt="icon-facebook"></a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSearch" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="./dist/images/icon-search.svg" alt="icon-search">
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSearch">
+                                <div class="card card-search">
+                                    <form action="./search.html" class="form-row">
+                                        <div class="col-12 col-xl-3 mb-2 mb-lg-0">
+                                            <select class="form-control">
+                                                <option>กรุงเทพมหานคร</option>
+                                                <option>เชียงใหม่</option>
+                                                <option>ชลบุรี</option>
+                                                <option>ภูเก็ต</option>
+                                                <option>ขอนแก่น</option>
+                                            </select>
+                                        </div>
+                                        <div class="col col-xl">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <span class="input-group-text">ค้นหา</span>
+                                                </div>
+                                                <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ...">
+                                            </div>
+                                        </div>
+                                        <div class="col-auto col-xl-auto">
+                                            <button class="btn btn-primary" type="submit"><img src="./dist/images/icon-search.svg"
+                                                    alt="icon-search"></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownLanguage" role="button"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                <img src="./dist/images/icon-language.png" alt="icon-language" class="d-none d-xl-inline-block">
+                                th
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownLanguage">
+                                <div class="card card-language">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="mr-4">
+                                            <a href="#" class="active">
+                                                <img src="./dist/images/icon-flag-th.png" alt="icon-flag-th"> Thai
+                                            </a>
+                                        </div>
+                                        <div>
+                                            <a href="#">
+                                                <img src="./dist/images/icon-flag-en.png" alt="icon-flag-en"> English
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <img src="./dist/images/icon-menu.svg" alt="icon-menu" class="hide">
+                        <img src="./dist/images/icon-close.svg" alt="icon-close" class="show">
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse order-xl-1" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item ">
+                            <a class="nav-link" href="./index.html">หน้าแรก</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./place.html">สถานที่</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">ร้าน</a></li>
+                        <li class="nav-item active"><a class="nav-link" href="./activities.html">กิจกรรม</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ลานเบียร์</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./album.html">อัลบั้ม</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./article.html">บทความ</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contact-us.html">ติดต่อเรา</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main id="activitiesDetailPage">
+        <!-- Page Header -->
+        <div class="page-header">
+            <div class="container">
+                <img src="./dist/images/logo-head.png" alt="logo-head" class="page-header-img">
+                <div class="page-header-body">
+                    <p class="page-header-title">สถานที่รวบรวมสถานที่ท่องเที่ยวในยามค่ำคืน</p>
+                    <div class="d-flex justify-content-between align-items-end mb-3">
+                        <!-- Breadcrumb -->
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="./index.html"><img src="./dist/images/icon-rocket.png"
+                                            alt="icon-rocket"> หน้าแรก</a></li>
+                                <li class="breadcrumb-item"><a href="./activities.html">กิจกรรม</a></li>
+                                <li class="breadcrumb-item"><a href="./place-detail.html">2499cafe</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">COCKTAIL</li>
+                            </ol>
+                        </nav>
+                        <!-- List comment -->
+                        <ul class="list-comment">
+                            <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                            <li>
+                                <a class="popover-share" tabindex="0"><img src="./dist/images/icon-share.png" alt="icon-share">
+                                    25 Share</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Page Content -->
+        <div class="page-content">
+            <div class="container">
+                <div class="row">
+                    <!-- Sidebar -->
+                    <div class="col-12 col-xl-4 order-2 order-xl-1">
+                        <div class="sidebar">
+                            <!-- กิจกรรมจังหวัดอื่นๆ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">กิจกรรมจังหวัดอื่นๆ</h4>
+                                <div class="card-body">
+                                    <span class="badge">เชียงใหม่</span>
+                                    <span class="badge">เชียงราย</span>
+                                    <span class="badge">ขอนแก่น</span>
+                                    <span class="badge">ชลบุรี</span>
+                                    <span class="badge">ภูเก็ต</span>
+                                    <span class="badge">บุรีรัมย์</span>
+                                    <span class="badge">กาญจนบุรี</span>
+                                </div>
+                            </div>
+                            <!-- กิจกรรมแนะนำ -->
+                            <div class="card card-sidebar">
+                                <h4 class="card-header">กิจกรรมแนะนำ</h4>
+                                <div class="card-body">
+                                    <ul class="list-interesting row">
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="list-item col-6 col-xl-12">
+                                            <a href="#" class="list-link form-row">
+                                                <div class="col-6 col-xl-3">
+                                                    <div class="list-img mb-3 mb-xl-0">
+                                                        <img src="./dist/images/activities-01.png" alt="activities-01">
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 col-xl-9 text-center text-xl-left">
+                                                    <h5 class="list-title">3 ต.ค. 61</h5>
+                                                    <p class="list-text">
+                                                        Season Fiveบาร์ ท่องโก๋
+                                                        โรงเบียร์ฮอลแลนด์
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Content -->
+                    <div class="col-12 col-xl-8 order-1 order-xl-2">
+                        <div class="text-center">
+                            <p class="mb-0">14 พ.ย. 61</p>
+                            <h1 class="text-shadow font-weight-normal">COCKTAIL</h1>
+                            <p>เปิดรับจองโต๊ะแล้ว คอนเสิร์ต COCKTAIL 14-11-2018 <br>
+                                ค่าเข้า 250 บาท (ไม่รวมกับค่าเปิดโต๊ะ) <br>
+                                #จองก่อนได้ก่อนน้าาาา</p>
+                        </div>
+                        <div class="card card-poster mb-2">
+                            <div class="card-img">
+                                <img src="./dist/images/poster-01.jpg" alt="poster">
+                            </div>
+                        </div>
+                        <!-- List comment -->
+                        <div class="d-flex justify-content-end mb-4">
+                            <ul class="list-comment">
+                                <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                <li>
+                                    <a class="popover-share" tabindex="0"><img src="./dist/images/icon-share.png" alt="icon-share">
+                                        25 Share</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Tags list -->
+                        <div class="text-center tags-list">
+                            <span class="badge">ลานเบียร์</span>
+                            <span class="badge">ลานเบียร์ Central World</span>
+                            <span class="badge">ลานเบียร์ Singha</span>
+                            <span class="badge">สิงห์</span>
+                        </div>
+                        <hr>
+                        <!-- Contact -->
+                        <div class="row align-items-center">
+                            <div class="col">
+                                <div class="d-flex align-items-center flex-column flex-md-row text-center text-sm-left">
+                                    <div class="mx-3">
+                                        <img src="./dist/images/icon-place-02.png" alt="icon-place">
+                                    </div>
+                                    <p class="mb-0">
+                                        18 ถนนสุขุมวิทซอย 61 กรุงเทพมหานคร
+                                        (พาร์คเลน เอกมัย)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="d-flex align-items-center flex-column flex-md-row text-center text-sm-left">
+                                    <div class="mx-3">
+                                        <img src="./dist/images/icon-mobile.png" alt="icon-mobile">
+                                    </div>
+                                    <p class="mb-0">
+                                        โทร: 02-0608822
+                                    </p>
+                                    <a href="#" class="btn btn-map ml-md-auto">Map</a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="col-xl-8 offset-xl-4 order-3 order-xl-3">
+                        <div class="card card-comment">
+                            <div class="card-header">
+                                <div class="user">
+                                    <div class="user-img"><img src="./dist/images/user.jpg" alt="user"></div>
+                                    <div class="user-info">
+                                        <p class="user-name">Samuel Garofalo</p>
+                                        <small class="user-date-time">5 พ.ย. 61 อ22:53 น.</small>
+                                    </div>
+                                </div>
+                                <div class="post-number">
+                                    # 1
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ไม่น่าเชื่อว่าเข้ามาในร้านได้ไม่ถึงครึ่ง ชม.
+                                    ร้านก็คนแน่นจนคนที่มาทีหลังต้องล่าถอยกันไปเลย
+                                    ทีเดียว ที่นี่จะเป็นพิซซ่าเตาถ่านที่ทำสดทุกชิ้น
+                                    ดังนั้นความหนาของแป้งจะไม่สม่ำเสมอกันสัก
+                                    เท่าไร แต่รสชาติและเทกซ์เจอร์ขอให้คะแนนเต็มค่ะ
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <!-- List comment -->
+                                <ul class="list-comment">
+                                    <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                    <li>
+                                        <a class="popover-share" tabindex="0"><img src="./dist/images/icon-share.png"
+                                                alt="icon-share">
+                                            25 Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card card-comment">
+                            <div class="card-header">
+                                <div class="user">
+                                    <div class="user-img"><img src="./dist/images/user.jpg" alt="user"></div>
+                                    <div class="user-info">
+                                        <p class="user-name">Samuel Garofalo</p>
+                                        <small class="user-date-time">5 พ.ย. 61 อ22:53 น.</small>
+                                    </div>
+                                </div>
+                                <div class="post-number">
+                                    # 2
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">
+                                    ไม่น่าเชื่อว่าเข้ามาในร้านได้ไม่ถึงครึ่ง ชม.
+                                    ร้านก็คนแน่นจนคนที่มาทีหลังต้องล่าถอยกันไปเลย
+                                    ทีเดียว ที่นี่จะเป็นพิซซ่าเตาถ่านที่ทำสดทุกชิ้น
+                                    ดังนั้นความหนาของแป้งจะไม่สม่ำเสมอกันสัก
+                                    เท่าไร แต่รสชาติและเทกซ์เจอร์ขอให้คะแนนเต็มค่ะ
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <!-- List comment -->
+                                <ul class="list-comment">
+                                    <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
+                                    <li>
+                                        <a class="popover-share" tabindex="0"><img src="./dist/images/icon-share.png"
+                                                alt="icon-share">
+                                            25 Share</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <form class="card-form-comment">
+                            <div class="card-header">
+                                <div class="card-header-icon"><img src="./dist/images/icon-place-02.png" alt="icon-place"
+                                        class="img-fluid"></div>
+                                <div class="card-header-text">แสดงความคิดเห็น</div>
+                            </div>
+                            <div class="card-body">
+                                <textarea rows="5" class="form-control"></textarea>
+                            </div>
+                            <div class="card-footer">
+                                <div class="fileinput fileinput-new" data-provides="fileinput">
+                                    <span class="btn btn-file"><span class="fileinput-new"><img src="./dist/images/icon-image.svg"
+                                                alt="icon-image"></span><span class="fileinput-exists">Change</span><input
+                                            type="file" name="..."></span>
+                                    <span class="fileinput-filename"></span>
+                                    <a href="#" class="close fileinput-exists" data-dismiss="fileinput" style="float: none">&times;</a>
+                                </div>
+                                <!-- Comment -->
+                                <button type="submit" class="btn btn-outline-light">Comment</button>
+                                <!-- กรุณา Login -->
+                                <!-- <div class="dropdown dropdown-login">
+                                                <button class="btn btn-outline-light dropdown-toggle" type="button" id="btnLogin"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-offset="0,10">
+                                                    กรุณา Login
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="btnLogin">
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="dropdown-icon"><img src="./dist/images/icon-facebook.svg" alt="icon-facebook"></div>
+                                                        เข้าสู่ระบบด้วย Facebook
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="dropdown-icon"><img src="./dist/images/icon-twitter.svg" alt="icon-twitter"></div>
+                                                        เข้าสู่ระบบด้วย Twitter
+                                                    </a>
+                                                    <a class="dropdown-item" href="#">
+                                                        <div class="dropdown-icon"><img src="./dist/images/icon-google-plus.svg"
+                                                                alt="icon-google-plus"></div>
+                                                        เข้าสู่ระบบด้วย Google+
+                                                    </a>
+                                                    <div class="d-flex">
+                                                        <a href="#" class="dropdown-item border-0 mb-0">
+                                                            เข้าสู่ระบบด้วยอีเมล์
+                                                        </a>
+                                                        <a href="#" class="dropdown-item border-0 mb-0">
+                                                            สมัครสมาชิก
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div> -->
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container">
+        <span>© (C) Thai2Night, All Rights Reserved.THAI2NIGHT</span>
+    </footer>
+
+    <!-- Talk -->
+    <div class="talk">
+        <ul class="list-talk">
+            <li>
+                <a href="javascript:void(0);" class="btn-talk btn-talk-toggler">
+                    <img src="./dist/images/icon-talk.png" alt="icon-talk" class="talk-hide">
+                    <img src="./dist/images/icon-talk-close.png" alt="icon-talk" class="talk-show">
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="btn-talk btn-talk-contact" id="btnTalkMessenger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35.574 16">
+                        <path d="M722.375,284.974l13.617-7.489,6.979,7.489,14.978-16-13.446,7.49-7.151-7.49Z" transform="translate(-722.375 -268.974)" /></svg>
+                </a>
+                <div class="card card-messeger">
+                    <img src="./dist/images/facebook-page.png" alt="facebook-page" class="img-fluid">
+                </div>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="btn-talk btn-talk-contact" id="btnTalkLine">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.794 16">
+                        <g transform="translate(-823.456 -268.974)">
+                            <path d="M840.25,275.788c0-3.759-3.766-6.814-8.4-6.814s-8.4,3.055-8.4,6.814c0,3.368,2.988,6.188,7.022,6.721.273.06.645.183.741.416a1.718,1.718,0,0,1,.027.758s-.1.593-.12.718c-.038.213-.17.831.726.453a26.988,26.988,0,0,0,6.6-4.875h0A6.05,6.05,0,0,0,840.25,275.788Zm-11.684,2.235H826.9a.439.439,0,0,1-.438-.441v-3.336a.439.439,0,1,1,.878,0v2.9h1.229a.441.441,0,0,1,0,.881Zm1.724-.441a.439.439,0,1,1-.878,0v-3.336a.439.439,0,1,1,.878,0Zm4.019,0a.444.444,0,0,1-.443.441.435.435,0,0,1-.35-.176l-1.709-2.329v2.064a.442.442,0,0,1-.884,0v-3.336a.441.441,0,0,1,.793-.265l1.712,2.33v-2.065a.441.441,0,0,1,.881,0Zm2.7-2.109a.44.44,0,0,1,0,.88H835.78v.789h1.227a.441.441,0,0,1,0,.881H835.34a.441.441,0,0,1-.44-.441v-3.336a.441.441,0,0,1,.44-.44h1.667a.441.441,0,0,1,0,.881H835.78v.788h1.227Z" />
+                        </g>
+                    </svg>
+                </a>
+                <div class="card card-line">
+                    <div class="row no-gutters">
+                        <div class="col-auto">
+                            <img src="./dist/images/icon-line-color.png" alt="icon-line-color" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <img src="./dist/images/line-rqcode.png" alt="line-rqcode" class="w-100">
+                        </div>
+                    </div>
+                    <h4 class="text-center text-dark mb-0 mt-4">
+                        แอดไลน์เป็นเพื่อนเราสิ <br>
+                        สแกนเลย!
+                    </h4>
+                </div>
+            </li>
+            <li>
+                <a href="./contact-us.html" class="btn-talk btn-talk-contact" id="btnTalkMail">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.111 16">
+                        <g transform="translate(-850.861 -268.974)">
+                            <path d="M850.861,268.974V269l11.555,6.944L873.972,269v-.028Zm0,2.111v13.889h23.111V271.085L862.416,278Z" />
+                        </g>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="btn-talk btn-talk-contact" id="btnTalkChat">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20.571 16">
+                        <path d="M14.857-10.536a4.64,4.64,0,0,1-1,2.857,6.834,6.834,0,0,1-2.7,2.089,8.945,8.945,0,0,1-3.732.768,8.884,8.884,0,0,1-3.964-.893,6.242,6.242,0,0,1-3.179.893A.253.253,0,0,1,.036-5a.277.277,0,0,1,.071-.321,4.256,4.256,0,0,0,.429-.571A5.9,5.9,0,0,0,1.357-7.25,4.715,4.715,0,0,1,0-10.536a4.64,4.64,0,0,1,1-2.857,6.834,6.834,0,0,1,2.7-2.089,8.946,8.946,0,0,1,3.732-.768,8.945,8.945,0,0,1,3.732.768,6.834,6.834,0,0,1,2.7,2.089A4.64,4.64,0,0,1,14.857-10.536Zm4.357,7.857a6.639,6.639,0,0,0,.821,1.393,5.054,5.054,0,0,0,.429.536.277.277,0,0,1,.071.321.253.253,0,0,1-.25.179,6.242,6.242,0,0,1-3.179-.893,8.884,8.884,0,0,1-3.964.893A8.854,8.854,0,0,1,9-1.214,6.255,6.255,0,0,1,6.286-3.75a10.475,10.475,0,0,0,1.143.071,9.9,9.9,0,0,0,4.286-.929,8.1,8.1,0,0,0,3.125-2.5A5.648,5.648,0,0,0,16-10.536a6.508,6.508,0,0,0-.036-.714,7.262,7.262,0,0,1,3.321,2.089,4.746,4.746,0,0,1,1.286,3.232A4.674,4.674,0,0,1,19.214-2.679Z"
+                            transform="translate(0 16.25)" /></svg>
+                </a>
+                <div class="card card-chat">
+                    <div class="text-center">
+                        <img src="./dist/images/logo-contact.png" alt="logo-contact" class="img-fluid">
+                        <h4 class="text-dark mb-0 mt-4">+66-8-7089-8140</h4>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="./dist/js/jquery-3.3.1.min.js"></script>
+    <script src="./dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./dist/js/bootstrap-select.min.js"></script>
+    <script src="./dist/js/slick.min.js"></script>
+    <script src="./dist/js/jquery.slimscroll.min.js"></script>
+    <script src="./dist/js/jasny-bootstrap.min.js"></script>
+    <script src="./dist/js/script.js"></script>
+</body>
+
+</html>

@@ -712,6 +712,7 @@
     }
 }
 
+// Card columns
 .card-columns {
     column-gap: .5rem;
 
@@ -726,5 +727,24 @@
     .card {
         height: calc(100% - .5rem);
         margin-bottom: .5rem;
+    }
+}
+
+// Card poster
+.card-poster {
+    padding: 1.5rem;
+    background-color: rgba(white, .15);
+    border-radius: unset;
+
+    .card-img {
+        padding: .25rem;
+        background-color: rgba(white, .15);
+        border-radius: unset;
+        @include shadow-primary-sm;
+
+        img {
+            width: 100%;
+            height: auto;
+        }
     }
 }
