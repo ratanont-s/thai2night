@@ -1,0 +1,50 @@
+// Dropdown login
+.dropdown-login {
+
+    .dropdown {
+        &-toggle {
+            &::after {
+                display: none;
+            }
+        }
+
+        &-menu {
+            background-color: $primary;
+            border: .25rem solid rgba(white, .15);
+            border-radius: .5rem;
+            padding: 1rem;
+            position: relative;
+
+            &::after {
+                content: '\25BC';
+                position: absolute;
+                bottom: -1rem;
+                right: 3rem;
+                color: $primary;
+            }
+        }
+
+        &-item {
+            display: flex;
+            padding: .25rem .5rem;
+            color: white;
+            border: 1px solid rgba(white, .5);
+            margin-bottom: .5rem;
+
+            font: {
+                family: $font-kanit;
+                size: 1.125rem;
+                font-weight: 300;
+            }
+
+            @include hover-focus {
+                background-color: rgba(black, .15);
+            }
+        }
+
+        &-icon {
+            min-width: 2.25rem;
+            text-align: center;
+        }
+    }
+}
