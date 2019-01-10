@@ -24,20 +24,20 @@
                     <ul class="navbar-nav-right order-0 order-xl-1">
                         <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Thai2Night" target="_blank"><img
                                     src="./dist/images/icon-facebook.svg" alt="icon-facebook"></a></li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown active ">
                             <a class="nav-link dropdown-toggle " href="#" id="navbarDropdownSearch" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
                                 <img src="./dist/images/icon-search.svg" alt="icon-search">
                             </a>
-                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownSearch">
+                            <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdownSearch">
                                 <div class="card card-search">
-                                    <form action="./search.html" class="form-row">
+                                    <form class="form-row">
                                         <div class="col-12 col-xl-3 mb-2 mb-lg-0">
-                                            <select class="form-control">
-                                                <option>กรุงเทพมหานคร</option>
+                                            <select class="selectpicker province form-control" data-style="btn-secondary"
+                                                data-header="จังหวัดที่คุณอยู่" title="จังหวัดที่คุณอยู่">
+                                                <option>กรุงเทพฯ</option>
                                                 <option>เชียงใหม่</option>
                                                 <option>ชลบุรี</option>
-                                                <option>ภูเก็ต</option>
                                                 <option>ขอนแก่น</option>
                                             </select>
                                         </div>
@@ -46,11 +46,22 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">ค้นหา</span>
                                                 </div>
-                                                <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ...">
+                                                <!-- <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."> -->
+                                                <select class="selectpicker keyword form-control" title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                                                    data-style="btn-secondary">
+                                                    <option data-icon="icon icon-beer">
+                                                        ร้านอาหาร กิจกรรม ที่เที่ยว
+                                                        ลานเบียร์ ...</option>
+                                                    <option data-icon="icon icon-microphone">ร้านเหล้า ร้านเหล้า
+                                                        ร้านเหล้า</option>
+                                                    <option data-icon="icon icon-plane">ร้านอาหาร กิจกรรม ที่เที่ยว
+                                                        ลานเบียร์
+                                                        ...</option>
+                                                </select>
                                             </div>
                                         </div>
                                         <div class="col-auto col-xl-auto">
-                                            <button class="btn btn-primary" type="submit"><img src="./dist/images/icon-search.svg"
+                                            <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.svg"
                                                     alt="icon-search"></button>
                                         </div>
                                     </form>
@@ -136,10 +147,12 @@
                         <div class="card card-search">
                             <div class="form-row">
                                 <div class="col-12 col-xl-3 mb-2 mb-lg-0">
-                                    <select class="selectpicker province" data-style="btn-secondary">
+                                    <select class="selectpicker province form-control" data-style="btn-secondary"
+                                        data-header="จังหวัดที่คุณอยู่" title="จังหวัดที่คุณอยู่">
                                         <option>กรุงเทพฯ</option>
-                                        <option>Ketchup</option>
-                                        <option>Barbecue</option>
+                                        <option>เชียงใหม่</option>
+                                        <option>ชลบุรี</option>
+                                        <option>ขอนแก่น</option>
                                     </select>
                                 </div>
                                 <div class="col col-xl">
@@ -147,16 +160,19 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">ค้นหา</span>
                                         </div>
-                                        <select class="selectpicker form-control" multiple title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
+                                        <select class="selectpicker form-control" title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
                                             data-style="btn-secondary">
-                                            <option>Mustard</option>
-                                            <option>Ketchup</option>
-                                            <option>Barbecue</option>
+                                            <option data-icon="icon icon-beer">
+                                                ร้านอาหาร กิจกรรม ที่เที่ยว
+                                                ลานเบียร์ ...</option>
+                                            <option data-icon="icon icon-microphone">ร้านเหล้า ร้านเหล้า ร้านเหล้า</option>
+                                            <option data-icon="icon icon-plane">ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์
+                                                ...</option>
                                         </select>
                                     </div>
                                 </div>
                                 <div class="col-auto col-xl-auto">
-                                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.png"
+                                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.svg"
                                             alt="icon-search"></button>
                                 </div>
                             </div>

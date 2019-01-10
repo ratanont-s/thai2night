@@ -59,8 +59,12 @@ $(function () {
     });
 
     // Drapdown menu
+    // $('.selectpicker').selectpicker();
     $('.dropdown-menu[aria-labelledby="navbarDropdownSearch"]').on('click', function (event) {
         event.stopPropagation();
+
+        $('.navbar .bootstrap-select.province .dropdown-menu').toggleClass('show');
+        $('.navbar .bootstrap-select.keyword .dropdown-menu').toggleClass('show');
     });
 
     // Popover

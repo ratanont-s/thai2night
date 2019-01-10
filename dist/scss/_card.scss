@@ -255,6 +255,12 @@
         z-index: $zindex-sticky;
     }
 
+    .btn {
+        img {
+            height: 1rem;
+        }
+    }
+
     .province {
         .btn.dropdown-toggle.btn-secondary {
             padding-left: 1.5rem;
@@ -273,6 +279,22 @@
         &-menu {
             background-color: $secondary;
             border-radius: unset;
+
+            .popover-header {
+                background-color: transparent;
+                font-weight: 300;
+                border-bottom-color: rgba(white, .15);
+
+                .close {
+                    display: none;
+                }
+            }
+
+            .bs-searchbox {
+                .form-control {
+                    background-color: rgba(white, .15);
+                }
+            }
         }
 
         &-header {
@@ -309,6 +331,7 @@
 
             &:hover {
                 background-color: $primary;
+                border-radius: unset;
             }
         }
     }

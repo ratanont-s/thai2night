@@ -137,9 +137,13 @@
         background-color: unset;
         min-width: 40vw;
 
+        .btn-primary {
+          border: 1px solid $primary;
+        }
+
         .form-control {
           background-color: $secondary;
-          border: 2px solid rgba(white, .15);
+          border: 1px solid rgba(white, .15);
           color: white;
 
           &:focus {
@@ -148,7 +152,7 @@
         }
 
         .input-group {
-          border: 2px solid rgba(white, .15);
+          border: 1px solid rgba(white, .15);
 
           .form-control {
             border: unset;
@@ -156,18 +160,9 @@
         }
       }
 
-      @include media-breakpoint-down(lg) {
-        width: 100%;
-        float: unset;
-        position: fixed;
-        top: 27px;
-        left: 0;
-      }
-
-      @include media-breakpoint-up(xl) {
-        // min-width: 50vw;
-      }
+      @include media-breakpoint-down(lg) {}
     }
+
   }
 
   @include media-breakpoint-up(xl) {
@@ -220,6 +215,16 @@
             border-bottom-color: white;
           }
         }
+      }
+    }
+
+    .nav-item.dropdown {
+      .dropdown-menu-right {
+        width: 100%;
+        float: unset;
+        position: fixed;
+        top: 27px;
+        left: 0;
       }
     }
   }
