@@ -13,19 +13,18 @@
                 border-bottom: 1px solid rgba(white, .15);
                 padding: .5rem 0;
                 font-weight: 400;
+
+                @include media-breakpoint-down(lg) {
+                    text-align: center;
+                }
             }
 
             &-body {
                 padding: 1rem 0;
 
                 .badge {
-                    font: {
-                        family: $font-pridi;
-                        size: .875rem;
-                        weight: 300;
-                    }
-
-                    margin-bottom: .25rem;
+                    font-size: 1rem;
+                    margin-bottom: .35rem;
                 }
 
                 .list-interesting {
