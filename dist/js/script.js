@@ -1,4 +1,6 @@
 $(function () {
+    // bs-custom-file-input
+    bsCustomFileInput.init();
 
     // Navbar Toggler
     $(".navbar-toggler").click(function () {
@@ -76,8 +78,8 @@ $(function () {
     });
 
     // cardGallery
-    $("[data-toggle='lightbox']").click(function (e) {
-        e.preventDefault();
+    $("[data-toggle='lightbox']").on('click', function (event) {
+        event.preventDefault();
         $(this).ekkoLightbox({
             leftArrow: "<span><img src='./dist/images/arrow-left.png' alt='arrow-left'></span>",
             rightArrow: "<span><img src='./dist/images/arrow-right.png' alt='arrow-right'></span>"

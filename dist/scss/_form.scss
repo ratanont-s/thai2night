@@ -1,0 +1,26 @@
+.custom-file {
+    &-label {
+        background-color: unset;
+        margin-bottom: unset;
+        border: unset;
+        color: $body-color;
+
+        &::after {
+            content: '';
+            padding: unset;
+            width: 2rem;
+            height: 100%;
+            background: url('../images/icon-image.svg') no-repeat center center;
+            background-size: 80%;
+            opacity: .5;
+        }
+    }
+
+    @include hover-focus {
+        .custom-file-label {
+            &::after {
+                opacity: 1;
+            }
+        }
+    }
+}

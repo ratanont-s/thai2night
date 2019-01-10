@@ -11,6 +11,7 @@ $font-family-base: "Pridi";
 $font-pridi: "Pridi";
 $headings-font-family: "Kanit";
 $font-kanit: "Kanit";
+$headings-color:white;
 
 // Buttons
 $btn-border-radius:0;
@@ -18,6 +19,9 @@ $btn-border-radius:0;
 // Input
 $input-border-radius:0;
 $input-height: auto;
+$custom-file-text: (en: "Browse55",
+es: "Elegir55"
+);
 
 // a
 $link-hover-decoration:none;
