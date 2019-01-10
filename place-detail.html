@@ -158,7 +158,7 @@
                                 <h4 class="card-header">
                                     <div class="d-flex justify-content-between align-items-end">
                                         <span>เวลาเปิดร้าน</span>
-                                        <ul class="list-inline mb-0">
+                                        <ul class="list-inline mb-0 d-none d-md-block">
                                             <li class="list-inline-item"><a href="#" target="_blank" class="img-link"><img
                                                         src="./dist/images/icon-facebook.png" alt="icon-facebook"></a></li>
                                             <li class="list-inline-item"><a href="#" target="_blank" class="img-link"><img
@@ -169,19 +169,27 @@
                                     </div>
                                 </h4>
                                 <div class="card-body">
+                                    <ul class="list-inline text-center d-md-none">
+                                        <li class="list-inline-item"><a href="#" target="_blank" class="img-link"><img
+                                                    src="./dist/images/icon-facebook.png" alt="icon-facebook"></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank" class="img-link"><img
+                                                    src="./dist/images/icon-twitter.png" alt="icon-twitter"></a></li>
+                                        <li class="list-inline-item"><a href="#" target="_blank" class="img-link"><img
+                                                    src="./dist/images/icon-google-plus.png" alt="icon-google-plus"></a></li>
+                                    </ul>
                                     <table class="table table-sm table-borderless">
                                         <tbody>
                                             <tr>
-                                                <td>อังคาร - พฤหัสบดี</td>
+                                                <td class="text-right text-md-left">อังคาร - พฤหัสบดี</td>
                                                 <td>17:30 - 00:00</td>
                                             </tr>
                                             <tr>
-                                                <td>ศุกร์ - อาทิตย์</td>
+                                                <td class="text-right text-md-left">ศุกร์ - อาทิตย์</td>
                                                 <td>17:30 - 02:00</td>
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <div class="tags-list">
+                                    <div class="tags-list text-center text-md-left">
                                         <span class="badge">มีที่จอดรถ</span>
                                         <span class="badge">Wi-Fi ฟรี</span>
                                         <span class="badge">รับบัตรเครดิต</span>
@@ -346,11 +354,11 @@
                                         <img src="./dist/images/album-01.jpg" alt="album">
                                     </a>
                                     <!-- elements not showing, use data-remote -->
-                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-01.jpg"></div>
-                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-01.jpg"></div>
-                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-01.jpg"></div>
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-02.jpg"></div>
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-03.jpg"></div>
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-04.jpg"></div>
                                     <div class="card-body">
-                                        <ul class="card-status justify-content-end">
+                                        <ul class="card-status">
                                             <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
                                             <li>
                                                 <a class="popover-share" tabindex="0"><img src="./dist/images/icon-share.png"
@@ -367,10 +375,15 @@
                                 </div>
                             </div>
                             <div class="col-6">
-                                <a href="./album-detail.html" class="card card-album">
-                                    <div class="card-img">
+                                <div class="card card-album">
+                                    <a href="./dist/images/album-02.jpg" class="card-img" data-toggle="lightbox"
+                                        data-gallery="album-01">
                                         <img src="./dist/images/album-02.jpg" alt="album">
-                                    </div>
+                                    </a>
+                                    <!-- elements not showing, use data-remote -->
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-03.jpg"></div>
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-04.jpg"></div>
+                                    <div data-toggle="lightbox" data-gallery="album-01" data-remote="./dist/images/album-01.jpg"></div>
                                     <div class="card-body">
                                         <ul class="card-status">
                                             <li><img src="./dist/images/icon-comment.png" alt="icon-comment"> 8 Comment</li>
@@ -380,11 +393,13 @@
                                                     25 Share</a>
                                             </li>
                                         </ul>
-                                        <h5 class="card-title">Green Halloween Party</h5>
-                                        <p class="card-text">Super Star Club พบกับ DJ และMC สาวสวย
-                                            ในค่ำคืนส่งท้ายคืนหลอนนนน แล้วเจอกันจ้า Sure Club</p>
+                                        <a href="./album-detail.html" class="card-link">
+                                            <h5 class="card-title">สินเจริญ บราเธอร์ส</h5>
+                                            <p class="card-text">ฟรี! คอนเสิร์ต สินเจริญ บราเธอร์ส วันพฤหัสบดี
+                                                ที่ 8 พฤศจิกายน...</p>
+                                        </a>
                                     </div>
-                                </a>
+                                </div>
                             </div>
                         </div>
                         <!-- Tags list -->

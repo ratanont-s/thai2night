@@ -1,83 +1,27 @@
 .card {
-    &-style-1 {
-        background-color: transparent;
-        border-radius: unset;
-        margin-bottom: 1.5rem;
-
-        .card {
-            &-img {
-                border-radius: unset;
-                position: relative;
-                @include shadow-primary;
-
-                &::before {
-                    content: '';
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    margin: auto;
-                    background: url('../images/icon-plus.png') no-repeat center center;
-                    background-size: auto;
-                }
-
-                img {
-                    position: relative;
-                    width: 100%;
-                }
-            }
-
-            &-body {
-                padding-left: .25rem;
-                padding-right: .25rem;
-                text-align: center;
-                color: white;
-            }
-
-            &-status {
-                margin-top: -.5rem;
-                list-style-type: none;
-                padding-left: unset;
-                text-align: right;
-                font-size: small;
-                opacity: .5;
-
-                li {
-                    display: inline-block;
-                    margin-right: 1.5rem;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-
-            &-title {
-                font-weight: 400;
-            }
-
-            &-text {
-                font-size: 0.875rem;
-                font-weight: 300;
-                opacity: .8;
-            }
-        }
+    &-link {
+        display: block;
 
         &:hover {
+            opacity: .5;
+        }
+    }
 
-            .card {
-                &-img {
-                    img {
-                        opacity: .5;
-                    }
-                }
+    &-status {
+        margin-top: -.5rem;
+        list-style-type: none;
+        padding-left: unset;
+        text-align: right;
+        font-size: .875rem;
+        opacity: .5;
 
-                &-status {
-                    opacity: 1;
-                }
+        li {
+            display: inline-block;
+            margin-right: 1.5rem;
+
+            &:last-child {
+                margin-right: 0;
             }
-
         }
     }
 }
@@ -125,31 +69,7 @@
             color: white;
         }
 
-        &-status {
-            margin-top: -.5rem;
-            list-style-type: none;
-            padding-left: unset;
-            text-align: right;
-            font-size: small;
-            opacity: .5;
 
-            li {
-                display: inline-block;
-                margin-right: 1.5rem;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
-        &-link {
-            display: block;
-
-            &:hover {
-                opacity: .5;
-            }
-        }
 
         &-title {
             font-weight: 400;
@@ -213,27 +133,26 @@
         &-text {
             opacity: .8;
             font-weight: 300;
+            color: $body-color;
+
+            @include media-breakpoint-down(lg) {
+                overflow: hidden;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+            }
+        }
+
+        &-link {
+            margin-bottom: 1rem;
         }
 
         &-status {
-            list-style: none;
-            padding-left: unset;
-            display: flex;
-            flex-direction: column;
-            margin-bottom: unset;
+            text-align: left;
 
-            @include media-breakpoint-up(xl) {
-                flex-direction: row;
-            }
-
-            li {
-                margin-bottom: .5rem;
-                margin-right: .5rem;
-                font-weight: 300;
-                font-size: .875rem;
-
-                &:last-child {
-                    margin-bottom: unset;
+            @include media-breakpoint-down(lg) {
+                li {
+                    display: block;
                     margin-right: unset;
                 }
             }
@@ -288,29 +207,12 @@
             color: white;
         }
 
-        &-status {
-            margin-top: -.5rem;
-            list-style-type: none;
-            padding-left: unset;
-            text-align: right;
-            font-size: small;
-            opacity: .5;
-
-            li {
-                display: inline-block;
-                margin-right: 1.5rem;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
         &-title {
             font-weight: 400;
         }
 
         &-text {
+            color: $body-color;
             font-size: 0.875rem;
             font-weight: 300;
             opacity: .8;
@@ -450,30 +352,12 @@
             color: white;
         }
 
-        &-status {
-            margin-top: -.5rem;
-            list-style-type: none;
-            padding-left: unset;
-            font-size: small;
-            opacity: .5;
-            display: flex;
-
-            li {
-                margin-right: 1.5rem;
-                font-weight: 300;
-                font-size: .875rem;
-
-                &:last-child {
-                    margin-right: 0;
-                }
-            }
-        }
-
         &-title {
             font-weight: 400;
         }
 
         &-text {
+            color: $body-color;
             font-size: 0.875rem;
             font-weight: 300;
             opacity: .8;
@@ -714,6 +598,10 @@
 // Card columns
 .card-columns {
     column-gap: .5rem;
+
+    @include media-breakpoint-down(md) {
+        column-count: 2;
+    }
 
     @include media-breakpoint-only(lg) {
         column-count: 3;

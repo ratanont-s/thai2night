@@ -3,6 +3,8 @@
 
     .dropdown {
         &-toggle {
+            white-space: nowrap;
+
             &::after {
                 display: none;
             }

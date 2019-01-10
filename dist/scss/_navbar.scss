@@ -202,4 +202,25 @@
       }
     }
   }
+
+  @include media-breakpoint-down(lg) {
+    .navbar-nav {
+      padding: 1rem 1rem 3rem;
+      background: url('../images/bg-navbar-collapse.png') no-repeat center center;
+      background-size: contain;
+
+      .nav-item {
+        .nav-link {
+          border-bottom: 1px solid $primary;
+          padding: 1rem 0;
+        }
+
+        &.active {
+          .nav-link {
+            border-bottom-color: white;
+          }
+        }
+      }
+    }
+  }
 }

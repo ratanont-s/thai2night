@@ -15,7 +15,7 @@ $(function () {
 
     // Card menu
     $('.card-menu .card-body').slimScroll({
-        height: '300px',
+        height: '18.75rem',
         color: '#14ACE9',
         size: '1rem',
         alwaysVisible: true,

@@ -4,6 +4,10 @@
     border: .25rem solid rgba(white, .15);
     border-radius: .5rem;
 
+    @include media-breakpoint-down(sm) {
+        min-width: 10rem;
+    }
+
     .arrow {
 
         &::before,
