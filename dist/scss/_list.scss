@@ -18,6 +18,22 @@
             margin-right: unset;
         }
     }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 11px;
+
+        img {
+            height: 11px;
+        }
+
+        li {
+            margin-right: .5rem;
+
+            &:last-child {
+                margin-right: unset;
+            }
+        }
+    }
 }
 
 // List share

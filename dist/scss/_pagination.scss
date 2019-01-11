@@ -1,6 +1,17 @@
 .pagination {
     .page-link {
         margin-left: .5rem;
+        padding: .15rem .75rem;
+
+        font: {
+            size: 1.375rem;
+            family: $font-kanit;
+            weight: 300;
+        }
+
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
     }
 
     .page-item {

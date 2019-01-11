@@ -15,5 +15,22 @@
         &:before {
             padding-top: 2px;
         }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 11px;
+
+        img {
+            height: 11px;
+        }
+
+        &-item+.breadcrumb-item {
+            padding-left: .25rem;
+
+            &::before {
+                padding-right: .25rem;
+            }
+        }
     }
 }

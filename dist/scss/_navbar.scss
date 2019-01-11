@@ -91,6 +91,12 @@
         opacity: .15;
       }
     }
+
+    @include media-breakpoint-down(sm) {
+      .nav-link {
+        padding: .5rem .5rem;
+      }
+    }
   }
 
   &-dark {
@@ -160,7 +166,6 @@
         }
       }
 
-      @include media-breakpoint-down(lg) {}
     }
 
   }
@@ -200,14 +205,14 @@
 
   @include media-breakpoint-down(lg) {
     .navbar-nav {
-      padding: 1rem 1rem 3rem;
+      padding: 0 1rem 3rem;
       background: url('../images/bg-navbar-collapse.png') no-repeat center center;
       background-size: contain;
 
       .nav-item {
         .nav-link {
           border-bottom: 1px solid $primary;
-          padding: 1rem 0;
+          padding: .75rem 0;
         }
 
         &.active {
@@ -223,7 +228,7 @@
         width: 100%;
         float: unset;
         position: fixed;
-        top: 27px;
+        top: 46px;
         left: 0;
       }
     }
