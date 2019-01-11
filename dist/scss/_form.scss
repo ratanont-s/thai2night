@@ -24,3 +24,77 @@
         }
     }
 }
+
+.custom-select {
+    background-color: $secondary;
+    color: white;
+    border-color: rgba(white, .15);
+    border-radius: unset;
+    white-space: nowrap;
+
+    &-province {
+        padding-left: 2rem;
+        background-image: url('../images/icon-custom-select.png');
+        background-position: right .5rem center;
+        background-size: 1rem auto;
+    }
+
+    &-place {
+        background-image: unset;
+    }
+}
+
+.input-group {
+    .custom-select {
+        border-color: $secondary;
+    }
+}
+
+// Select2
+// .card-search .input-group {
+//     flex-wrap: unset;
+//     overflow: hidden;
+
+//     .input-group-prepend {
+//         flex-shrink: 1 !important;
+//     }
+
+//     .input-group-text {
+//         font-size: 14px;
+//     }
+
+//     .select2-container--bootstrap {
+//         width: 100% !important;
+
+//         .select2-selection {
+//             border-color: $secondary;
+//         }
+
+
+//     }
+// }
+
+// .select2 {
+//     &-province {
+//         .select2-container--bootstrap .select2-selection--single {
+//             padding-left: 2rem;
+//         }
+//     }
+
+//     &-container--bootstrap {
+
+//         .select2-selection {
+//             border-radius: unset;
+//             border-color: rgba(white, .15);
+//             background-color: $secondary;
+//         }
+
+//         .select2-dropdown {
+//             background-color: $secondary;
+//         }
+
+//         .select2-selection--single .select2-selection__rendered {
+//             color: white;
+//         }
+//     }
+// }

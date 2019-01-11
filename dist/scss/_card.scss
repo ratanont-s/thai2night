@@ -260,6 +260,15 @@
         z-index: $zindex-sticky;
     }
 
+    .form-control {
+        &::placeholder {
+            color: $primary;
+        }
+
+        background-color: $secondary;
+        border-color: $secondary;
+    }
+
     .btn {
         img {
             height: 1rem;
@@ -423,6 +432,11 @@
             background-color: unset;
             border-bottom: 1px solid rgba(white, .15);
 
+            @include media-breakpoint-down(sm) {
+                padding-left: .5rem;
+                padding-right: .5rem;
+            }
+
             .user {
                 display: flex;
 
@@ -430,8 +444,8 @@
                     margin-right: .5rem;
                     border-radius: 10rem;
                     border: 2px solid rgba(white, .15);
-                    width: 2.8125rem;
-                    height: 2.8125rem;
+                    width: 2.8123rem;
+                    height: 2.8123rem;
                     overflow: hidden;
 
                     img {

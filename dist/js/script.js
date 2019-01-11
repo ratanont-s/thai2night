@@ -62,10 +62,10 @@ $(function () {
     // $('.selectpicker').selectpicker();
     $('.dropdown-menu[aria-labelledby="navbarDropdownSearch"]').on('click', function (event) {
         event.stopPropagation();
-
-        $('.navbar .bootstrap-select.province .dropdown-menu').toggleClass('show');
-        $('.navbar .bootstrap-select.keyword .dropdown-menu').toggleClass('show');
     });
+    // $('.bootstrap-select').on('click', function () {
+    //     $(this).parents(".dropdown-menu").toggleClass('55');
+    // })
 
     // Popover
     $('[data-toggle="popover"]').popover();

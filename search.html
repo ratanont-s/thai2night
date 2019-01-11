@@ -31,13 +31,13 @@
                             </a>
                             <div class="dropdown-menu dropdown-menu-right " aria-labelledby="navbarDropdownSearch">
                                 <div class="card card-search">
-                                    <form class="form-row">
-                                        <div class="col-12 col-xl-3 mb-2 mb-lg-0">
-                                            <select class="selectpicker province form-control" data-style="btn-secondary"
-                                                data-header="จังหวัดที่คุณอยู่" title="จังหวัดที่คุณอยู่">
-                                                <option>กรุงเทพฯ</option>
+                                    <form class="form-row" action="./search.html">
+                                        <div class="col-12 col-xl-4 mb-2 mb-lg-0">
+                                            <select class="custom-select custom-select-province">
+                                                <option>กรุงเทพมหานคร</option>
                                                 <option>เชียงใหม่</option>
                                                 <option>ชลบุรี</option>
+                                                <option>ภูเก็ต</option>
                                                 <option>ขอนแก่น</option>
                                             </select>
                                         </div>
@@ -46,22 +46,12 @@
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text">ค้นหา</span>
                                                 </div>
-                                                <!-- <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."> -->
-                                                <select class="selectpicker keyword form-control" title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
-                                                    data-style="btn-secondary">
-                                                    <option data-icon="icon icon-beer">
-                                                        ร้านอาหาร กิจกรรม ที่เที่ยว
-                                                        ลานเบียร์ ...</option>
-                                                    <option data-icon="icon icon-microphone">ร้านเหล้า ร้านเหล้า
-                                                        ร้านเหล้า</option>
-                                                    <option data-icon="icon icon-plane">ร้านอาหาร กิจกรรม ที่เที่ยว
-                                                        ลานเบียร์
-                                                        ...</option>
-                                                </select>
+                                                <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว
+                                              ลานเบียร์ ...">
                                             </div>
                                         </div>
                                         <div class="col-auto col-xl-auto">
-                                            <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.svg"
+                                            <button class="btn btn-primary" type="submit"><img src="./dist/images/icon-search.svg"
                                                     alt="icon-search"></button>
                                         </div>
                                     </form>
@@ -145,13 +135,13 @@
                 <div class="row justify-content-center mb-4">
                     <div class="col-12 col-xl-8">
                         <div class="card card-search">
-                            <div class="form-row">
-                                <div class="col-12 col-xl-3 mb-2 mb-lg-0">
-                                    <select class="selectpicker province form-control" data-style="btn-secondary"
-                                        data-header="จังหวัดที่คุณอยู่" title="จังหวัดที่คุณอยู่">
-                                        <option>กรุงเทพฯ</option>
+                            <form class="form-row" action="./search.html">
+                                <div class="col-12 col-xl-4 mb-2 mb-lg-0">
+                                    <select class="custom-select custom-select-province">
+                                        <option>กรุงเทพมหานคร</option>
                                         <option>เชียงใหม่</option>
                                         <option>ชลบุรี</option>
+                                        <option>ภูเก็ต</option>
                                         <option>ขอนแก่น</option>
                                     </select>
                                 </div>
@@ -160,22 +150,15 @@
                                         <div class="input-group-prepend">
                                             <span class="input-group-text">ค้นหา</span>
                                         </div>
-                                        <select class="selectpicker form-control" title="ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์ ..."
-                                            data-style="btn-secondary">
-                                            <option data-icon="icon icon-beer">
-                                                ร้านอาหาร กิจกรรม ที่เที่ยว
-                                                ลานเบียร์ ...</option>
-                                            <option data-icon="icon icon-microphone">ร้านเหล้า ร้านเหล้า ร้านเหล้า</option>
-                                            <option data-icon="icon icon-plane">ร้านอาหาร กิจกรรม ที่เที่ยว ลานเบียร์
-                                                ...</option>
-                                        </select>
+                                        <input type="text" class="form-control" placeholder="ร้านอาหาร กิจกรรม ที่เที่ยว
+                                      ลานเบียร์ ...">
                                     </div>
                                 </div>
                                 <div class="col-auto col-xl-auto">
-                                    <button class="btn btn-primary" type="button"><img src="./dist/images/icon-search.svg"
+                                    <button class="btn btn-primary" type="submit"><img src="./dist/images/icon-search.svg"
                                             alt="icon-search"></button>
                                 </div>
-                            </div>
+                            </form>
                         </div>
                     </div>
                 </div>
