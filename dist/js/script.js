@@ -15,13 +15,10 @@ $(function () {
 
     // Card menu
     $('.card-menu .card-body').slimScroll({
-        height: '18.75rem',
+        height: '300px',
         color: '#14ACE9',
         size: '1rem',
-        alwaysVisible: true,
-        railVisible: true,
-        railColor: "white",
-        wheelStep: 100
+        alwaysVisible: true
     });
 
     // Place images slide

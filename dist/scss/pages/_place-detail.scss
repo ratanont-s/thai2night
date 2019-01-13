@@ -36,15 +36,20 @@
                 margin-top: 1.25rem;
                 margin-bottom: 1.25rem;
 
-                .slimScrollBar {
-                    height: 1rem !important;
-                    border-radius: unset !important;
-                    opacity: 1 !important;
+                &::before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    right: .5rem;
+                    width: 1px;
+                    height: 100%;
+                    background-color: rgba(white, .15);
+
                 }
 
-                .slimScrollRail {
-                    width: 1px !important;
-                    right: .5rem !important;
+                .slimScrollBar {
+                    border-radius: unset !important;
+                    opacity: 1 !important;
                 }
             }
 
