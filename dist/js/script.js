@@ -87,14 +87,11 @@ $(function () {
         });
     });
 
-
-});
-
-$(document).ready(function () {
-    // Album detail
-    $('.grid').masonry({
-        itemSelector: '.grid-item', // use a separate class for itemSelector, other than .col-
-        columnWidth: '.grid-item',
-        percentPosition: true
+    var $grid = $('.grid').imagesLoaded(function () {
+        $grid.masonry({
+            itemSelector: '.grid-item',
+            percentPosition: true,
+            columnWidth: '.grid-item'
+        });
     });
 });
